@@ -1,0 +1,49 @@
+.navbar {
+  transition: width 600ms ease;
+}
+
+
+.category-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 1rem; /* Add margin to the right side of each card */
+}
+
+.category-card {
+  transition: transform 0.3s;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+.card-title {
+  color: black;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  .col-lg-1 {
+    flex: 0 0 auto;
+    width: 14.285714%; /* Set your desired width here */
+    margin-bottom: 10px; /* Adjust the margin-bottom as needed */
+  }
+}
+
+
+

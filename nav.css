@@ -1,0 +1,65 @@
+/* Navbar background and height */
+.navbar {
+  background-color: #f8f9fa;
+  height: 70px;
+}
+
+/* Navbar brand logo and text */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-brand img {
+  margin-right: 5px;
+}
+
+/* Search input */
+.navbar form input[type="search"] {
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  box-shadow: 0 2px 5px rgba(37, 37, 37, 0.214);
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar form input[type="search"]:focus {
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar toggler icon */
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="%23333" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+  width: 30px;
+  height: 30px;
+}
+
+/* Dropdown menus */
+.dropdown-menu {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #f8f9fa;
+}
