@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     //update and save location in sessionStorage while dropdown changing  
       sessionStorage.setItem("selectedProvince", selectedProvince);
+      updateCategoryURLs(selectedProvince);
     });
   
     function updateCategoryURLs(selectedProvince) {
