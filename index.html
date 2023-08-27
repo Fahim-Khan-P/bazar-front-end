@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <!-- Naviagation start -->
+<!-- Naviagation start -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="#">
@@ -66,50 +66,140 @@
                 <a class="nav-link" href="./navbar.html" >Request Ads</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sign Up</a>
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <!-- Navigation end -->
-      <!-- Login Model -->
-      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content rounded-0 border-0 p-4">
-                <div class="modal-header border-0">
-                    <h3>Login</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                  <h2>Login Form</h2>
-                  <p>Please fill in your User Name and password.</p>
-                    <form action="php/login.php" method="post">
-                        <div class="form-group">
-                            <label>User Name</label>
-                            <input type="text" name="uname" class="form-control" required />
-                        </div>
-                        <div class="form-group">
-                            <label>Password</label>
-                            <input type="password" name="password" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" name="submit" class="btn btn-primary" value="Login">
-                        </div>
-                    </form>
-                </div>
-            </div>
+<!-- Navigation end -->
+
+<!-- Login Modal Start -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <!-- Add your login form here -->
+          <form method="POST" action="{{ route('login') }}">
+            <!-- @csrf  -->
+
+<!-- Phone Number Input  -->
+            <div class="mb-3">
+              <label for="mobile_no" class="form-label">Phone</label>
+              <input type="number" class="form-control" id="phone" name="mobile_no" required autocomplete="mobile_no" autofocus>
+            </div>
+
+<!-- password Input  -->
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="newpassword" name="password" required autocomplete="current-password">
+            </div>
+
+<!-- remebe me cheack  -->
+            <div class="mb-3">
+              <input class="form-check-input" type="checkbox" name="remember" id="remember">
+              <label class="form-check-label" for="remember">
+                remember me
+            </label>
+            </div>
+
+<!-- login form submit button  -->
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+      </div>
     </div>
+  </div>
+<!-- End of login model -->
 
-    <!-- end of login model -->
+<!-- Sign Up model start  -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Add your sign up form here -->
+        <form method="POST" action="{{ route('register') }}">
+          <!-- @csrf -->
 
-      <!-- search input and dropdown start -->
+<!-- First name input  -->
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required autocomplete="name" autofocus>
+            <!-- @error('name')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+        @enderror -->
+          </div>
+
+<!-- last name input  -->
+          <div class="mb-3">
+            <label for="lname" class="form-label">Lastname</label>
+            <input type="text" class="form-control" id="lname" name="lname" required autocomplete="lname" autofocus>
+            <!-- @error('lname')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+        @enderror -->
+          </div>
+
+<!-- input for Mobile Number  -->
+          <div class="mb-3">
+            <label for="mobile_no" class="form-label">Phone</label>
+            <input type="number" class="form-control" id="mobile_no" name="mobile_no" required autocomplete="mobile_no" autofocus>
+            <!-- @error('mobile_no')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+        @enderror -->
+          </div>
+
+<!-- email input  -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" autocomplete="email" autofocus>
+          </div>
+
+<!-- password input  -->
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" autocomplete="new-password" required readonly>
+            <!-- @error('password')
+            <span class="invalid-feedback" role="alert">
+               <strong>{{ $message }}</strong>
+            </span>
+             @enderror -->
+          </div>
+
+<!-- Confirm Password  -->         
+          <div class="mb-3">
+            <label for="password-confirm" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password-confirm" name="password_confirmation" autocomplete="new-password" readonly required>
+            
+          </div>
+
+
+<!-- submit button  -->
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Sign Up model End  -->
+
+<!-- search input and dropdown start -->
       <div class="container mt-5">
         <div class="row">
           <div class="col-md-6">
@@ -165,7 +255,7 @@
 <div class="container">
     <h4 class="text-center my-4">Categories</h4>
     <div class="row d-flex justify-content-center">
-      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1">
+      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1 ml-1">
         <a href="{{ route('products.mobile') }}" class="category">
           <div class="card category-card" style="width: 9rem;">
             <img src="./assets/mobile.jpg" class="card-img-top" alt="..." style="height: 6rem;">
@@ -176,10 +266,10 @@
           </div>
         </a>
       </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1">
+      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1 ml-1">
         <a href="{{ route('products.mobile') }}" class="category" >
           <div class="card category-card" style="width: 9rem;">
-            <img src="./assets/electronics.jpg" class="card-img-top" alt="..." style="height: 6rem;">
+            <img src="./assets/electronic.png" class="card-img-top" alt="..." style="height: 6rem;">
             <div class="card-body">
               <h5 class="card-title text-center">Electronics</h5>
               <p class="card-text text-center text-muted">213242</p>
@@ -187,10 +277,10 @@
           </div>
         </a>
       </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1">
+      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1 ml-1">
         <a href="{{ route('products.mobile') }}" class="category">
           <div class="card category-card" style="width: 9rem;">
-            <img src="./assets/men.jpg" class="card-img-top" alt="..." style="height: 6rem;">
+            <img src="./assets/man.png" class="card-img-top" alt="..." style="height: 6rem;">
             <div class="card-body">
               <h5 class="card-title text-center">Men</h5>
               <p class="card-text text-center text-muted">324323</p>
@@ -198,10 +288,10 @@
           </div>
         </a>
       </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1">
+      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1 ml-1">
         <a href="{{ route('products.mobile') }}" class="category">
           <div class="card category-card" style="width: 9rem;">
-            <img src="./assets/women.jpg" class="card-img-top" alt="..." style="height: 6rem;">
+            <img src="./assets/women.png" class="card-img-top" alt="..." style="height: 6rem;">
             <div class="card-body">
               <h5 class="card-title text-center">Women</h5>
               <p class="card-text text-center text-muted">4220</p>
@@ -209,10 +299,10 @@
           </div>
         </a>
       </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1">
+      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1 ml-1">
         <a href="{{ route('products.mobile') }}"" class="category">
           <div class="card category-card" style="width: 9rem;">
-            <img src="./assets/kid.jpg" class="card-img-top" alt="..." style="height: 6rem;">
+            <img src="./assets/kids.png" class="card-img-top" alt="..." style="height: 6rem;">
             <div class="card-body">
               <h5 class="card-title text-center">Kids</h5>
               <p class="card-text text-center text-muted">23120</p>
@@ -220,7 +310,7 @@
           </div>
         </a>
       </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1">
+      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1 ml-1">
         <a href="{{ route('products.mobile') }}" class="category">
           <div class="card category-card" style="width: 9rem;">
             <img src="./assets/living.png" class="card-img-top" alt="..." style="height: 6rem;">
@@ -231,7 +321,7 @@
           </div>
         </a>
       </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1">
+      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1 ml-1">
         <a href="{{ route('products.mobile') }}" class="category">
           <div class="card category-card" style="width: 9rem;">
             <img src="./assets/services.png" class="card-img-top" alt="..." style="height: 6rem;">
@@ -242,7 +332,7 @@
           </div>
         </a>
       </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1">
+      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1 ml-1">
         <a href="{{ route('products.mobile') }}" class="category">
           <div class="card category-card" style="width: 9rem;">
             <img src="./assets/essential.png" class="card-img-top" alt="..." style="height: 6rem;">
@@ -253,7 +343,7 @@
           </div>
         </a>
       </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1">
+      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1 ml-1">
         <a href="{{ route('products.mobile') }}" class="category">
           <div class="card category-card" style="width: 9rem;">
             <img src="./assets/property.png" class="card-img-top" alt="..." style="height: 6rem;">
@@ -264,7 +354,7 @@
           </div>
         </a>
       </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1">
+      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1 ml-1">
         <a href="{{ route('products.mobile') }}" class="category">
           <div class="card category-card" style="width: 9rem;">
             <img src="./assets/sport.png" class="card-img-top" alt="..." style="height: 6rem;">
@@ -275,7 +365,7 @@
           </div>
         </a>
       </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1">
+      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1 ml-1">
         <a href="{{ route('products.mobile') }}" class="category">
           <div class="card category-card" style="width: 9rem;">
             <img src="./assets/veh.png" class="card-img-top" alt="..." style="height: 6rem;">
@@ -286,7 +376,7 @@
           </div>
         </a>
       </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1">
+      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1 ml-1">
         <a href="{{ route('products.mobile') }}" class="category">
           <div class="card category-card" style="width: 9rem;">
             <img src="./assets/education.png" class="card-img-top" alt="..." style="height: 6rem;">
@@ -297,7 +387,7 @@
           </div>
         </a>
       </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1">
+      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1 ml-1">
         <a href="{{ route('products.mobile') }}" class="category">
           <div class="card category-card" style="width: 9rem;">
             <img src="./assets/agrpng.png" class="card-img-top" alt="..." style="height: 6rem;">
@@ -308,7 +398,7 @@
           </div>
         </a>
       </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1">
+      <div class="col-6 col-sm-6 col-md-3 col-lg-1 mt-1 ml-1">
         <a href="{{ route('products.mobile') }}" class="category">
           <div class="card category-card" style="width: 9rem;">
             <img src="./assets/grain.png" class="card-img-top" alt="..." style="height: 6rem;">
