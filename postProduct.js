@@ -706,7 +706,11 @@ const populateAttributes = () => {
 };
 
 const categorySelect = document.getElementById("productCategory");
-categorySelect.addEventListener("change", populateSubCategoryOptions);
+categorySelect.addEventListener("change", () => {
+  populateSubCategoryOptions();
+  populateAttributes();
+
+});
 
 const subCategorySelect = document.getElementById("productSubCategory");
 subCategorySelect.addEventListener("change", populateAttributes);
