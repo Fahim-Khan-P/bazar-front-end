@@ -255,10 +255,208 @@ const categories = [
       },
       {
         name: "TVs",
-        attributes: []
+        attributes: [
+          {
+            name: "Title",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Brand",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Size",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Display Resolution",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Display Technology",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Smart Features",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Connectivity",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Sound Quality",
+           placeholder: "Placeholder..."
+          },
+          {
+            name: "Inputs and Outputs",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Condition",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Usage Details",
+            placeholder: "Placeholder..."
+          }
+        ]
       },
       {
-        name: "Cameras",
+        name: "TV & Video Accessories",
+        attributes: [
+          {
+            name: "Title",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Brand",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Size",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Display Resolution",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Display Technology",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Smart Features",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Connectivity",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Sound Quality",
+           placeholder: "Placeholder..."
+          },
+          {
+            name: "Inputs and Outputs",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Condition",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Usage Details",
+            placeholder: "Placeholder..."
+          }
+        ]
+      },
+      {
+        name: "Home Appliances",
+        attributes: [
+          {
+            name: "Type of Appliance",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Size and Dimensions",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Condition",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Features",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Color",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Usage Details",
+            placeholder: "Placeholder..."
+          }
+        ]
+      },
+
+      {
+        name: "Cameras, Camcorders & Accessories",
+        attributes: [
+          {
+            name: "Title",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "LCD Screen",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "ISO Range",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Shutter Speed",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Auto Focus System",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Video Recording",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Image Stabilization",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Connectivity",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Battery Life",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Memory Card",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Included Accessories",
+            placeholder: "Placeholder..."
+          }
+          ,
+          {
+            name: "Description",
+            placeholder: "Placeholder..."
+          }
+          ,
+          {
+            name: "Condition",
+            placeholder: "Placeholder..."
+          }
+          ,
+          {
+            name: "Sensor Size",
+            placeholder: "Placeholder..."
+          }
+          ,
+          {
+            name: "Megapixels",
+            placeholder: "Placeholder..."
+          }
+          ,
+          {
+            name: "Lens Compatibility",
+            placeholder: "Placeholder..."
+          }
+        ]
+      },
+      {
+        name: "Video Game Consoles & Accessories",
         attributes: [
           {
             name: "Title",
@@ -269,31 +467,19 @@ const categories = [
             placeholder: "Placeholder..."
           },
           {
-            name: "Brand and Model",
+            name: "Storage Capacity",
             placeholder: "Placeholder..."
           },
           {
-            name: "Specifications",
+            name: "Condition",
             placeholder: "Placeholder..."
           },
           {
-            name: "Sensor Type",
+            name: "Included Accessories",
             placeholder: "Placeholder..."
           },
           {
-            name: "Resolution",
-            placeholder: "Placeholder..."
-          },
-          {
-            name: "Optical Zoom",
-            placeholder: "Placeholder..."
-          },
-          {
-            name: "Digital Zoom",
-            placeholder: "Placeholder..."
-          },
-          {
-            name: "Video Recording",
+            name: "Games",
             placeholder: "Placeholder..."
           },
           {
@@ -301,14 +487,115 @@ const categories = [
             placeholder: "Placeholder..."
           },
           {
-            name: "Battery Life",
+            name: "Features",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Controllers",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Functions",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Speed",
+            placeholder: "Placeholder..."
+          }
+          ,
+          {
+            name: "Duplexing",
+            placeholder: "Placeholder..."
+          }
+          ,
+          {
+            name: "Paper Handling",
+            placeholder: "Placeholder..."
+          }
+          ,
+          {
+            name: "Color Capabilities",
+            placeholder: "Placeholder..."
+          }
+          ,
+          {
+            name: "Resolution",
+            placeholder: "Placeholder..."
+          }
+          ,
+          {
+            name: "Connectivity",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Touchscreen/Control Panel",
+            placeholder: "Placeholder..."
+          }
+          ,
+          {
+            name: "Operating System Compatibility",
+            placeholder: "Placeholder..."
+          }
+          ,
+          {
+            name: "Features",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Condition",
             placeholder: "Placeholder..."
           }
         ]
       },
       {
-        name: "Audio",
-        attributes: []
+        name: "ACs & Home Electronics",
+        attributes: [
+          {
+            name: "Title",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Description",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Product Type",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Condition",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Capacity/Size",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Usage Details",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Included Accessories",
+            placeholder: "Placeholder..."
+          },
+        ]
+      },
+      {
+        name: "Audio & Sound Systems",
+        attributes: [
+          {
+            name: "Condation",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Frequency Interval",
+            placeholder: "Placeholder..."
+          },
+          {
+            name: "Description",
+            placeholder: "Placeholder..."
+          }
+        ]
       }
     ]
   },
