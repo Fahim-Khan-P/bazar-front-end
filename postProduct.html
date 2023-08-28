@@ -616,7 +616,7 @@
             <!-- end of category dropdown menu  -->
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./postProduct.html"
+              <a class="nav-link active" aria-current="page" href="#"
                 >Post Ads</a
               >
             </li>
@@ -857,5 +857,91 @@
       </div>
     </div>
     <!-- Sign Up model End  -->
+
+
+
+
+
+
+
+    <!-- add product model start  -->
+
+    <div class="container">
+      <div class="container mt-5 col-md-8">
+        <h2>Product Details</h2>
+        <form method="POST" action="{{route('product.store')}}" enctype="multipart/form-data">
+          <!-- @csrf -->
+
+          <!-- main category options -->
+          <div class="mb-3">
+            <label for="productCategory" class="form-label">Product Category</label>
+            <select class="form-select" id="productCategory" name="productCategory" required>
+            </select>
+          </div>
+          
+          <!-- sub categories options  -->
+          <div class="mb-3">
+            <label for="productSubCategory" class="form-label">Product Sub-Category</label>
+            <select class="form-select" id="productSubCategory" name="productSubCategory" required>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="productName" class="form-label">Product Name</label>
+            <input type="text" class="form-control" id="productName" name="productName" required>
+          </div>
+          <div class="mb-3">
+            <label for="condition" class="form-label">Condition</label>
+            <select class="form-select" id="condition" name="condition" required>
+              <option value="">Please choose the condition</option>
+              <option value="new">New</option>
+              <option value="used">Used</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="varient" class="form-label">Variant</label>
+            <select class="form-select" id="varient" name="variant" required>
+              <option value="">Please choose the variant</option>
+              <option value="Original">Original</option>
+              <option value="Refurbished">Refurbished</option>
+              <option value="Copy">Copy</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="brand" class="form-label">Brand</label>
+            <input type="text" id="brand" name="brand" list="brand_names" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="model_name" class="form-label">Model Name</label>
+            <input type="text" class="form-control" id="model_name" name="model_name" required>
+          </div>
+
+          <!-- dynamic part of input boxes which create based on sub-category attributes -->
+          <div id="attributesContainer" class="mb-3"></div>
+          
+
+          <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input type="number" class="form-control" id="price" name="price" required>
+          </div>
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea class="form-control" id="description" name="description" rows="5" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="image" class="form-label">Product Image</label>
+            <input type="file" class="form-control" id="image" name="image[]" multiple accept="image/*" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Create Product</button>
+        </form>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- end of product post! -->
+    <script src="./postProduct.js"></script>
   </body>
 </html>

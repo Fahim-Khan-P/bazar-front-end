@@ -10,7 +10,7 @@
 
 .dropend:hover > .nav-link{
   background-color: gray;
-  color: blue;
+  /* color: blue; */
 
 }
 

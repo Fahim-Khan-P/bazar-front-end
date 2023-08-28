@@ -2,6 +2,17 @@
 #logo {
   margin-left: 50%;
 }
+/* open dropdown-menu by hover effect  */
+.dropdown:hover > .dropdown-menu {
+  display: block;
+  margin-top: 6px;
+}
+
+.dropend:hover > .nav-link{
+  background-color: gray;
+  /* color: blue; */
+
+}
 
 .navbar {
   background-color: #f8f9fa;
