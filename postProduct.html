@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./nav.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="./assets/logo1.png"
+            width="45px"
+            height="45px"
+            alt=""
+            id="logo"
+          />
+          <!-- <span class="ms-2">Bazar App</span> -->
+        </a>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search..."
+            aria-label="Search"
+          />
+        </form>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarLangDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Language
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarLangDropdown">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Dari</a></li>
+                <li><a class="dropdown-item" href="#">Pashto</a></li>
+              </ul>
+            </li>
+
+            <!-- start of category dropdown menu in navbar  -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                <li class="nav-item dropend">
+                  <a
+                    class="nav-link dropdend-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Mobile &raquo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Mobile Phone Accessories</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="#">Wearables</a></li>
+                    <li><a class="dropdown-item" href="#">SIM Cards</a></li>
+                    <li><a class="dropdown-item" href="#">SIM Cards</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropend">
+                  <a
+                    class="nav-link dropdend-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Electronics &raquo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#">Desktop Computers</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Laptops</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Laptop & Computer Accessories</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Tablets & Accessories</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="#">TVs</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >TV & Video Accessories</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Home Appliances</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Cameras, Camcorders & Accessories</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >ACs & Home Electronics</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Audio & Sound Systems</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Video Game Consoles & Accessories</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="#">Photocopiers</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Other Electronics</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropend">
+                  <a
+                    class="nav-link dropdend-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Vehicles &raquo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <li><a class="dropdown-item" href="#">Cars</a></li>
+                    <li><a class="dropdown-item" href="#">Motorbikes</a></li>
+                    <li><a class="dropdown-item" href="#">Bicycles</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Three Wheelers</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Trucks</a></li>
+                    <li><a class="dropdown-item" href="#">Vans</a></li>
+                    <li><a class="dropdown-item" href="#">Buses</a></li>
+                    <li><a class="dropdown-item" href="#">Heavy Duty</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Auto Parts & Accessories</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Water Transport</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Auto Services</a></li>
+                    <li><a class="dropdown-item" href="#">Rentals</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropend">
+                  <a
+                    class="nav-link dropdend-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Property &raquo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <li><a class="dropdown-item" href="#">Land For Sale</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Apartments For Sale</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Houses For Sale</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Commercial Properties For Sale</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="#">New Projects</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropend">
+                  <a
+                    class="nav-link dropdend-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Home & living &raquo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Living Room Furniture</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Kitchen & Dining Furniture</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Bedroom Furniture</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Office & Shop Furniture</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Children's Furniture</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Household Items</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Bathroom Products</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Doors</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Home Textiles & Decoration</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropend">
+                  <a
+                    class="nav-link dropdend-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Men &raquo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <li><a class="dropdown-item" href="#">Jacket & Coat</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Shirts & T-Shirts</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Pants</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Traditional Clothing</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Grooming & Bodycare</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Optical & Sunglasses</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Baby Boy's Fashion</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Bags & Accessories</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Footwear</a></li>
+                    <li><a class="dropdown-item" href="#">Watches</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Wholesale - Bulk</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropend">
+                  <a
+                    class="nav-link dropdend-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Women &raquo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#">Traditional Wear</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Winter Wear</a></li>
+                    <li><a class="dropdown-item" href="#">Western Wear</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Bags & Accessories</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Footwear</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Lingerie & Sleepwear</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Jewellery & Watches</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Beauty & Personal Care</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Optical & Sunglasses</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Wholesale - Bulk</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Baby Girl's Fashion</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropend">
+                  <a
+                    class="nav-link dropdend-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Kids &raquo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <li><a class="dropdown-item" href="#">Toys</a></li>
+                    <li><a class="dropdown-item" href="#">Baby Gear</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Kids' Clothing</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Kids' Shoes</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Kids' Accessories</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Children's Books</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">School Supplies</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Kids' Furniture</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Strollers & Car Seats</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Baby Care Products</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Kids' Bikes & Ride-Ons</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Kids' Sports Equipment</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Kids' Party Supplies</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Kids' Arts & Crafts</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Kids' Musical Instruments</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Kids' Electronics</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Kids' Video Games</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Kids' Outdoor Play Equipment</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Kids' Indoor Play Equipment</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Kids' Party Entertainment</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropend">
+                  <a
+                    class="nav-link dropdend-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Hobbies & Sports &raquo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#">Musical Instruments</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sports</a></li>
+                    <li><a class="dropdown-item" href="#">Fitness & Gym</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Music, Books & Movies</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Children's Items</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Other Hobby, Sport & Kids items</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropend">
+                  <a
+                    class="nav-link dropdend-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Education &raquo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <li><a class="dropdown-item" href="#">Textbooks</a></li>
+                    <li><a class="dropdown-item" href="#">Tuition</a></li>
+                    <li><a class="dropdown-item" href="#">Courses</a></li>
+                    <li><a class="dropdown-item" href="#">Study Abroad</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Other Education</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropend">
+                  <a
+                    class="nav-link dropdend-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Essentials &raquo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <li><a class="dropdown-item" href="#">Grocery</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Fruits & Vegetables</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Meat & Seafood</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Baby Products</a></li>
+                    <li><a class="dropdown-item" href="#">Healthcare</a></li>
+                    <li><a class="dropdown-item" href="#">Household</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Other Essentials</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropend">
+                  <a
+                    class="nav-link dropdend-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services &raquo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#">Building maintenance</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Domestic & Daycare Services</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Fitness & Beauty Services</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="#">IT Services</a></li>
+                    <li><a class="dropdown-item" href="#">Matrimonials</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Media & Event Management Services</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Professional Services</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Servicing & Repair</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Tours & Travels</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropend">
+                  <a
+                    class="nav-link dropdend-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Agriculture &raquo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Crops, Seeds & Plants</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Farming Tools & Machinery</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Other Agriculture</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropend">
+                  <a
+                    class="nav-link dropdend-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Grains &raquo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <li><a class="dropdown-item" href="#">Rice</a></li>
+                    <li><a class="dropdown-item" href="#">Wheat</a></li>
+                    <li><a class="dropdown-item" href="#">Corn</a></li>
+                    <li><a class="dropdown-item" href="#">Barley</a></li>
+                    <li><a class="dropdown-item" href="#">Oats</a></li>
+                    <li><a class="dropdown-item" href="#">Quinoa</a></li>
+                    <li><a class="dropdown-item" href="#">Millet</a></li>
+                  </ul>
+                </li>
+                <!-- end of sub categories  -->
+              </ul>
+            </li>
+            <!-- end of category dropdown menu  -->
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Post Ads</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./navbar.html">Request Ads</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                >Login</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#signupModal"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation end -->
+
+    <!-- Login Modal Start -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Add your login form here -->
+            <form method="POST" action="{{ route('login') }}">
+              <!-- @csrf  -->
+
+              <!-- Phone Number Input  -->
+              <div class="mb-3">
+                <label for="mobile_no" class="form-label">Phone</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="phone"
+                  name="mobile_no"
+                  required
+                  autocomplete="mobile_no"
+                  autofocus
+                />
+              </div>
+
+              <!-- password Input  -->
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="newpassword"
+                  name="password"
+                  required
+                  autocomplete="current-password"
+                />
+              </div>
+
+              <!-- remebe me cheack  -->
+              <div class="mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="remember"
+                  id="remember"
+                />
+                <label class="form-check-label" for="remember">
+                  remember me
+                </label>
+              </div>
+
+              <!-- login form submit button  -->
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of login model -->
+
+    <!-- Sign Up model start  -->
+    <div
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Add your sign up form here -->
+            <form method="POST" action="{{ route('register') }}">
+              <!-- @csrf -->
+
+              <!-- First name input  -->
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required
+                  autocomplete="name"
+                  autofocus
+                />
+                <!-- @error('name')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+        @enderror -->
+              </div>
+
+              <!-- last name input  -->
+              <div class="mb-3">
+                <label for="lname" class="form-label">Lastname</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lname"
+                  name="lname"
+                  required
+                  autocomplete="lname"
+                  autofocus
+                />
+                <!-- @error('lname')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+        @enderror -->
+              </div>
+
+              <!-- input for Mobile Number  -->
+              <div class="mb-3">
+                <label for="mobile_no" class="form-label">Phone</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="mobile_no"
+                  name="mobile_no"
+                  required
+                  autocomplete="mobile_no"
+                  autofocus
+                />
+                <!-- @error('mobile_no')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+        @enderror -->
+              </div>
+
+              <!-- email input  -->
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  autofocus
+                />
+              </div>
+
+              <!-- password input  -->
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  autocomplete="new-password"
+                  required
+                  readonly
+                />
+                <!-- @error('password')
+            <span class="invalid-feedback" role="alert">
+               <strong>{{ $message }}</strong>
+            </span>
+             @enderror -->
+              </div>
+
+              <!-- Confirm Password  -->
+              <div class="mb-3">
+                <label for="password-confirm" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password-confirm"
+                  name="password_confirmation"
+                  autocomplete="new-password"
+                  readonly
+                  required
+                />
+              </div>
+
+              <!-- submit button  -->
+              <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sign Up model End  -->
+
+
+
+
+
+
+
+    <!-- add product model start  -->
+
+    <div class="container">
+      <div class="container mt-5 col-md-8">
+        <h2>Product Details</h2>
+        <form method="POST" action="{{route('product.store')}}" enctype="multipart/form-data">
+          <!-- @csrf -->
+
+          <!-- main category options -->
+          <div class="mb-3">
+            <label for="productCategory" class="form-label">Product Category</label>
+            <select class="form-select" id="productCategory" name="productCategory" required>
+            </select>
+          </div>
+          
+          <!-- sub categories options  -->
+          <div class="mb-3">
+            <label for="productSubCategory" class="form-label">Product Sub-Category</label>
+            <select class="form-select" id="productSubCategory" name="productSubCategory" required>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="productName" class="form-label">Product Name</label>
+            <input type="text" class="form-control" id="productName" name="productName" required>
+          </div>
+          <div class="mb-3">
+            <label for="condition" class="form-label">Condition</label>
+            <select class="form-select" id="condition" name="condition" required>
+              <option value="">Please choose the condition</option>
+              <option value="new">New</option>
+              <option value="used">Used</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="varient" class="form-label">Variant</label>
+            <select class="form-select" id="varient" name="variant" required>
+              <option value="">Please choose the variant</option>
+              <option value="Original">Original</option>
+              <option value="Refurbished">Refurbished</option>
+              <option value="Copy">Copy</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="brand" class="form-label">Brand</label>
+            <input type="text" id="brand" name="brand" list="brand_names" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="model_name" class="form-label">Model Name</label>
+            <input type="text" class="form-control" id="model_name" name="model_name" required>
+          </div>
+
+          <!-- dynamic part of input boxes which create based on sub-category attributes -->
+          <div id="attributesContainer" class="mb-3"></div>
+          
+
+          <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input type="number" class="form-control" id="price" name="price" required>
+          </div>
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea class="form-control" id="description" name="description" rows="5" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="image" class="form-label">Product Image</label>
+            <input type="file" class="form-control" id="image" name="image[]" multiple accept="image/*" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Create Product</button>
+        </form>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- end of product post! -->
+    <script src="./postProduct.js"></script>
+  </body>
+</html>
