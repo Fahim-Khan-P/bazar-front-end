@@ -8,6 +8,10 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./nav.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -81,18 +85,25 @@
               >
                 Categories
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
-                <li class="nav-item dropend">
-                  <a
-                    class="nav-link dropdend-toggle"
-                    href="#"
-                    role="button"
+              <ul class="dropdown-menu" id="dropdownMainUl" aria-labelledby="navbarCatDropdown">
+                <!-- Mobile dropdown  -->
+                <div class="btn-group dropend" >
+                  <button type="button" class="btn">
+                    <a href="#">
+                      Mobile
+                    </a>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    id="arrow1"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    
                   >
-                    Mobile &raquo
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <span class="visually-hidden">Toggle Dropright</span>
+                  </button>
+                  <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
                     <li>
                       <a class="dropdown-item" href="#"
@@ -103,19 +114,26 @@
                     <li><a class="dropdown-item" href="#">SIM Cards</a></li>
                     <li><a class="dropdown-item" href="#">SIM Cards</a></li>
                   </ul>
-                </li>
+                </div>
 
-                <li class="nav-item dropend">
-                  <a
-                    class="nav-link dropdend-toggle"
-                    href="#"
-                    role="button"
+                <!-- Electronics dropdown  -->
+                <div class="btn-group dropend">
+                  <button type="button" class="btn">
+                    <a href="#">
+                      Electronics
+                    </a>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    id="arrow2"
+                    
                   >
-                    Electronics &raquo
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <span class="visually-hidden">Toggle Dropright</span>
+                  </button>
+                  <ul class="dropdown-menu">
                     <li>
                       <a class="dropdown-item" href="#">Desktop Computers</a>
                     </li>
@@ -164,19 +182,22 @@
                       <a class="dropdown-item" href="#">Other Electronics</a>
                     </li>
                   </ul>
-                </li>
+                </div>
 
-                <li class="nav-item dropend">
-                  <a
-                    class="nav-link dropdend-toggle"
-                    href="#"
-                    role="button"
+                <!-- Vehicles dropdown  -->
+                <div class="btn-group dropend">
+                  <button type="button" class="btn"> <a href="#">Vehicles</a></button>
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    id="arrow3"
+                    
                   >
-                    Vehicles &raquo
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <span class="visually-hidden">Toggle Dropright</span>
+                  </button>
+                  <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Cars</a></li>
                     <li><a class="dropdown-item" href="#">Motorbikes</a></li>
                     <li><a class="dropdown-item" href="#">Bicycles</a></li>
@@ -198,19 +219,21 @@
                     <li><a class="dropdown-item" href="#">Auto Services</a></li>
                     <li><a class="dropdown-item" href="#">Rentals</a></li>
                   </ul>
-                </li>
+                </div>
 
-                <li class="nav-item dropend">
-                  <a
-                    class="nav-link dropdend-toggle"
-                    href="#"
-                    role="button"
+                <!-- Property dropdown  -->
+                <div class="btn-group dropend">
+                  <button type="button" class="btn"> <a href="#">Property</a></button>
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    id="arrow15"
                   >
-                    Property &raquo
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <span class="visually-hidden">Toggle Dropright</span>
+                  </button>
+                  <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Land For Sale</a></li>
                     <li>
                       <a class="dropdown-item" href="#">Apartments For Sale</a>
@@ -225,19 +248,23 @@
                     </li>
                     <li><a class="dropdown-item" href="#">New Projects</a></li>
                   </ul>
-                </li>
+                </div>
 
-                <li class="nav-item dropend">
-                  <a
-                    class="nav-link dropdend-toggle"
-                    href="#"
-                    role="button"
+
+                 <!-- Home living dropdown  -->
+                 <div class="btn-group dropend">
+                  <button type="button" class="btn"> <a href="#">Home/living</a></button>
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    id="arrow5"
+                    
                   >
-                    Home & living &raquo
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <span class="visually-hidden">Toggle Dropright</span>
+                  </button>
+                  <ul class="dropdown-menu">
                     <li>
                       <a class="dropdown-item" href="#"
                         >Living Room Furniture</a
@@ -272,19 +299,23 @@
                       >
                     </li>
                   </ul>
-                </li>
+                </div>
 
-                <li class="nav-item dropend">
-                  <a
-                    class="nav-link dropdend-toggle"
-                    href="#"
-                    role="button"
+
+                 <!-- Men dropdown  -->
+                 <div class="btn-group dropend">
+                  <button type="button" class="btn"> <a href="#">Men</a></button>
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    id="arrow6"
+                    
                   >
-                    Men &raquo
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <span class="visually-hidden">Toggle Dropright</span>
+                  </button>
+                  <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Jacket & Coat</a></li>
                     <li>
                       <a class="dropdown-item" href="#">Shirts & T-Shirts</a>
@@ -311,19 +342,23 @@
                       <a class="dropdown-item" href="#">Wholesale - Bulk</a>
                     </li>
                   </ul>
-                </li>
-
-                <li class="nav-item dropend">
-                  <a
-                    class="nav-link dropdend-toggle"
-                    href="#"
-                    role="button"
+                </div>               
+              
+               
+                <!-- Women dropdown  -->
+                <div class="btn-group dropend">
+                  <button type="button" class="btn"> <a href="#">Women</a></button>
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    id="arrow7"
+                    
                   >
-                    Women &raquo
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <span class="visually-hidden">Toggle Dropright</span>
+                  </button>
+                  <ul class="dropdown-menu">
                     <li>
                       <a class="dropdown-item" href="#">Traditional Wear</a>
                     </li>
@@ -354,19 +389,22 @@
                       <a class="dropdown-item" href="#">Baby Girl's Fashion</a>
                     </li>
                   </ul>
-                </li>
+                </div>   
 
-                <li class="nav-item dropend">
-                  <a
-                    class="nav-link dropdend-toggle"
-                    href="#"
-                    role="button"
+                <!-- Kids dropdown  -->
+                <div class="btn-group dropend">
+                  <button type="button" class="btn"> <a href="#">Kids</a></button>
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    id="arrow8"
+                    
                   >
-                    Kids &raquo
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
+                    <span class="visually-hidden">Toggle Dropright</span>
+                  </button>
+                  <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Toys</a></li>
                     <li><a class="dropdown-item" href="#">Baby Gear</a></li>
                     <li>
@@ -436,73 +474,84 @@
                       >
                     </li>
                   </ul>
-                </li>
+                </div>  
 
-                <li class="nav-item dropend">
-                  <a
-                    class="nav-link dropdend-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Hobbies & Sports &raquo
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
-                    <li>
-                      <a class="dropdown-item" href="#">Musical Instruments</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Sports</a></li>
-                    <li><a class="dropdown-item" href="#">Fitness & Gym</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Music, Books & Movies</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Children's Items</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Other Hobby, Sport & Kids items</a
-                      >
-                    </li>
-                  </ul>
-                </li>
+               <!--  Hobbies/Sports dropdown  -->
+               <div class="btn-group dropend">
+                <button type="button" class="btn"> <a href="#"> Hobbies/Sports</a></button>
+                <button
+                  type="button"
+                  class="btn dropdown-toggle dropdown-toggle-split"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="arrow9"
+                  
+                >
+                  <span class="visually-hidden">Toggle Dropright</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Musical Instruments</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Sports</a></li>
+                  <li><a class="dropdown-item" href="#">Fitness & Gym</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Music, Books & Movies</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Children's Items</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Other Hobby, Sport & Kids items</a
+                    >
+                  </li>
+                </ul>
+              </div>  
+                
 
-                <li class="nav-item dropend">
-                  <a
-                    class="nav-link dropdend-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Education &raquo
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
-                    <li><a class="dropdown-item" href="#">Textbooks</a></li>
+               <!--  Education dropdown  -->
+               <div class="btn-group dropend">
+                <button type="button" class="btn"> <a href="#"> Education</a></button>
+                <button
+                  type="button"
+                  class="btn dropdown-toggle dropdown-toggle-split"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="arrow10"
+                  
+                >
+                  <span class="visually-hidden">Toggle Dropright</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Textbooks</a></li>
                     <li><a class="dropdown-item" href="#">Tuition</a></li>
                     <li><a class="dropdown-item" href="#">Courses</a></li>
                     <li><a class="dropdown-item" href="#">Study Abroad</a></li>
                     <li>
                       <a class="dropdown-item" href="#">Other Education</a>
                     </li>
-                  </ul>
-                </li>
+                </ul>
+              </div>  
+                
 
-                <li class="nav-item dropend">
-                  <a
-                    class="nav-link dropdend-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Essentials &raquo
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
-                    <li><a class="dropdown-item" href="#">Grocery</a></li>
+               <!--  Essentials dropdown  -->
+               <div class="btn-group dropend">
+                <button type="button" class="btn"> <a href="#"> Essentials</a></button>
+                <button
+                  type="button"
+                  class="btn dropdown-toggle dropdown-toggle-split"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="arrow11"
+                  
+                >
+                  <span class="visually-hidden">Toggle Dropright</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Grocery</a></li>
                     <li>
                       <a class="dropdown-item" href="#">Fruits & Vegetables</a>
                     </li>
@@ -515,108 +564,140 @@
                     <li>
                       <a class="dropdown-item" href="#">Other Essentials</a>
                     </li>
-                  </ul>
-                </li>
+                </ul>
+              </div>  
 
-                <li class="nav-item dropend">
-                  <a
-                    class="nav-link dropdend-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Services &raquo
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
-                    <li>
-                      <a class="dropdown-item" href="#">Building maintenance</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Domestic & Daycare Services</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Fitness & Beauty Services</a
-                      >
-                    </li>
-                    <li><a class="dropdown-item" href="#">IT Services</a></li>
-                    <li><a class="dropdown-item" href="#">Matrimonials</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Media & Event Management Services</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Professional Services</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Servicing & Repair</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Tours & Travels</a>
-                    </li>
-                  </ul>
-                </li>
+              <!--  Services dropdown  -->
+              <div class="btn-group dropend">
+                <button type="button" class="btn"> <a href="#"> Services</a></button>
+                <button
+                  type="button"
+                  class="btn dropdown-toggle dropdown-toggle-split"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="arrow12"
+                  
+                >
+                  <span class="visually-hidden">Toggle Dropright</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Building maintenance</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Domestic & Daycare Services</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Fitness & Beauty Services</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">IT Services</a></li>
+                  <li><a class="dropdown-item" href="#">Matrimonials</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Media & Event Management Services</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Professional Services</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Servicing & Repair</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Tours & Travels</a>
+                  </li>
+                </ul>
+              </div>  
 
-                <li class="nav-item dropend">
-                  <a
-                    class="nav-link dropdend-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Agriculture &raquo
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Crops, Seeds & Plants</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Farming Tools & Machinery</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Other Agriculture</a>
-                    </li>
-                  </ul>
-                </li>
+               
 
-                <li class="nav-item dropend">
-                  <a
-                    class="nav-link dropdend-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Grains &raquo
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarCatDropdown">
-                    <li><a class="dropdown-item" href="#">Rice</a></li>
+                <!--  Agriculture dropdown  -->
+              <div class="btn-group dropend">
+                <button type="button" class="btn"> <a href="#"> Agriculture</a></button>
+                <button
+                  type="button"
+                  class="btn dropdown-toggle dropdown-toggle-split"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="arrow13"
+                >
+                  <span class="visually-hidden">Toggle Dropright</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Crops, Seeds & Plants</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Farming Tools & Machinery</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Other Agriculture</a>
+                  </li>
+                </ul>
+              </div>  
+
+              <!--  Grains dropdown  -->
+              <div class="btn-group dropend">
+                <button type="button" class="btn"> <a href="#"> Grains</a></button>
+                <button
+                  type="button"
+                  class="btn dropdown-toggle dropdown-toggle-split"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="arrow14"
+                  
+                >
+                  <span class="visually-hidden">Toggle Dropright</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Rice</a></li>
                     <li><a class="dropdown-item" href="#">Wheat</a></li>
                     <li><a class="dropdown-item" href="#">Corn</a></li>
                     <li><a class="dropdown-item" href="#">Barley</a></li>
                     <li><a class="dropdown-item" href="#">Oats</a></li>
                     <li><a class="dropdown-item" href="#">Quinoa</a></li>
                     <li><a class="dropdown-item" href="#">Millet</a></li>
-                  </ul>
-                </li>
+                </ul>
+              </div>  
                 <!-- end of sub categories  -->
               </ul>
             </li>
             <!-- end of category dropdown menu  -->
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./postProduct.html"
+                ><i
+                  class="fa-brands fa-rocketchat fa-flip"
+                  style="color: #1100ff"
+                ></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./postProduct.html"
+                >About</a
+              >
+            </li>
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./postProduct.html"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./postProduct.html"
                 >Post Ads</a
               >
             </li>
