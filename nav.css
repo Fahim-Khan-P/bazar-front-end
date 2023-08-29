@@ -129,7 +129,7 @@ and (min-device-width : 240px)
 and (max-device-width : 360px)  
 { 
   .navbar form input[type="search"] {
-    width: 16vh;
+    width: 21vh;
     margin-left: 24px;
 }
 }  
