@@ -109,7 +109,7 @@ and (min-device-width : 1200px)
 and (max-device-width : 1500px)  
 { 
   .navbar form input[type="search"] {
-    width: 85vh;
+    width: 65vh;
     margin-left: 24px;
 }
 }  
@@ -119,7 +119,17 @@ and (min-device-width : 1024px)
 and (max-device-width : 1200px)  
 { 
   .navbar form input[type="search"] {
-    width: 55vh;
+    width: 40vh;
+    margin-left: 24px;
+}
+}  
+
+@media only screen   
+and (min-device-width : 240px)   
+and (max-device-width : 360px)  
+{ 
+  .navbar form input[type="search"] {
+    width: 16vh;
     margin-left: 24px;
 }
 }  
