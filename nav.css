@@ -1,0 +1,135 @@
+/* Navbar background and height */
+#logo {
+  margin-left: 50%;
+}
+a {
+  text-decoration: none;
+}
+
+/* open dropdown-menu by hover effect  */
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+}
+
+/* Navbar brand logo and text */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-brand img {
+  margin-right: 5px;
+}
+
+/* Search input */
+.navbar form input[type="search"] {
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  box-shadow: 0 1px 1px rgba(37, 37, 37, 0.214);
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar form input[type="search"]:focus {
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar toggler icon */
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  outline: none;
+}
+
+/* Start of .dropdown-menu style */
+/* arrow is the id of every ">" in .dropdown-menu list button  */
+#arrow1,
+#arrow2,
+#arrow3,
+#arrow5,
+#arrow6,
+#arrow7,
+#arrow8,
+#arrow9,
+#arrow10,
+#arrow11,
+#arrow12,
+#arrow13,
+#arrow14,
+#arrow15 {
+  padding-right: 1.75rem;
+  /* padding-left: 0.75rem; */
+}
+
+.btn-group button {
+  background-color: rgba(43, 43, 43, 0.216);
+}
+
+.btn-group button:hover {
+  background-color: rgb(240, 255, 255);
+  border-radius: 0;
+}
+#dropdownMainUl {
+  /* display: grid; */
+  grid-template-columns: 100%;
+}
+
+#dropdownMainUl div {
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+#dropdownMainUl {
+ border: none;
+ background: transparent;
+}
+/* End of .dropdown-menu style  */
+
+@media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px)  
+{ 
+  .navbar form input[type="search"] {
+    width: 33vh;
+    margin-left: 24px;
+}
+}  
+
+@media only screen   
+and (min-device-width : 1200px)   
+and (max-device-width : 1500px)  
+{ 
+  .navbar form input[type="search"] {
+    width: 65vh;
+    margin-left: 24px;
+}
+}  
+
+@media only screen   
+and (min-device-width : 1024px)   
+and (max-device-width : 1200px)  
+{ 
+  .navbar form input[type="search"] {
+    width: 40vh;
+    margin-left: 24px;
+}
+}  
+
+@media only screen   
+and (min-device-width : 240px)   
+and (max-device-width : 360px)  
+{ 
+  .navbar form input[type="search"] {
+    width: 20vh;
+    margin-left: 24px;
+}
+}  
