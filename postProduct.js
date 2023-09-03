@@ -2124,12 +2124,12 @@ const populateSubCategoryOptions = () => {
       });
     }
     // Iterate over the subcategories of the selected category
-    let i = 1
+    // let i = 1
     selectedCategory.subcategories.forEach((subcategory) => {
       
       const optionElement = document.createElement("option");
-      optionElement.value = i;
-      i++;
+      // optionElement.value = i;
+      // i++;
       optionElement.textContent = subcategory.name;
       subCategorySelect.appendChild(optionElement);
     });
