@@ -1947,32 +1947,24 @@ const categories = [
       name: "Crops, Seeds & Plants",
       attributes: [
         {
-          name: "Year",
-          placeholder: "Specify the year of manufacture"
+          name: "Type",
+          placeholder: "Specify the type of crop, seed, or plant"
         },
         {
-          name: "Engine and Transmission",
-          placeholder: "Describe the engine and transmission details"
+          name: "Quantity",
+          placeholder: "Specify the quantity available"
         },
         {
-          name: "Fuel_Type",
-          placeholder: "Specify the fuel type used"
+          name: "Origin",
+          placeholder: "Specify the place of origin"
         },
         {
-          name: "Drive Type",
-          placeholder: "Specify the drive type"
+          name: "Growth Stage",
+          placeholder: "Indicate the growth stage"
         },
         {
-          name: "History",
-          placeholder: "Describe the maintenance and repair history"
-        },
-        {
-          name: "Ownership Documentation",
-          placeholder: "Specify the ownership documentation"
-        },
-        {
-          name: "Usage",
-          placeholder: "Describe the usage details"
+          name: "Organic",
+          placeholder: "Specify if the crops, seeds, or plants are organic"
         }
       ]
     },
@@ -1983,8 +1975,8 @@ const categories = [
         placeholder: "Specify the year of manufacture"
       },
       {
-        name: "Engine and Transmission",
-        placeholder: "Describe the engine and transmission details"
+        name: "Type",
+        placeholder: "Specify the type of farming tool or machinery"
       },
       {
         name: "Fuel Type",
@@ -2010,7 +2002,12 @@ const categories = [
     },
     {
       name: "Other Agriculture",
-      attributes: []
+      attributes: [
+        {
+          name: "Specific Attributes",
+          placeholder: "Specify the key attributes"
+        }
+      ]
     }
     ]
   },
