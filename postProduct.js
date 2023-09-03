@@ -2071,116 +2071,87 @@ const categories = [
   },
 ];
 
-// // accessing navigation category item! 
-// const categoryDropDown = document.getElementById('categoryDropDown');
+// Get the necessary DOM elements
+// Get the necessary DOM elements
+const categorySelect = document.getElementById("productCategory");
+const subCategorySelect = document.getElementById("productSubCategory");
+const attributesContainer = document.getElementById("attributesContainer");
 
-// categoryDropDown.addEventListener('click', () => {
- 
-//   console.log('Element clicked!');
-// });
-
+// Populate category options dynamically
 const populateCategoryOptions = () => {
-  const selectElement = document.getElementById("productCategory");
+  categorySelect.innerHTML = ""; // Clear previous options
 
   categories.forEach((category, index) => {
     const optionElement = document.createElement("option");
     const optionValue = index + 1;
     optionElement.value = optionValue;
     optionElement.textContent = category.name;
-    selectElement.appendChild(optionElement);
+    categorySelect.appendChild(optionElement);
   });
 };
 
-populateCategoryOptions();
-
-
-
+// Populate subcategory options dynamically based on the selected category
 const populateSubCategoryOptions = () => {
-  const categorySelect = document.getElementById("productCategory");
-  const subCategorySelect = document.getElementById("productSubCategory");
-  const attributesContainer = document.getElementById("attributesContainer");
+  const selectedCategoryIndex = parseInt(categorySelect.value) - 1;
+  const selectedCategory = categories[selectedCategoryIndex];
   const divElements = document.querySelectorAll('.removeableInputs');
 
-
-  // Clear previous options
-  subCategorySelect.innerHTML = "";
-  attributesContainer.innerHTML = "";
-
-  // Get the selected category
-  const selectedCategoryIndex = parseInt(categorySelect.value) - 1;
-  const selectedCategory = categories[selectedCategoryIndex];
-
-  // Check if the selected category is found
+  subCategorySelect.innerHTML = ""; // Clear previous options
   if (selectedCategory) {
     if (selectedCategory.name == 'Grains' || selectedCategory.name == 'Agriculture' || selectedCategory.name == 'Services' || selectedCategory.name == 'Property' || selectedCategory.name == 'Essentials' || selectedCategory.name == 'Education') {
-      console.log(selectedCategory.name,"dsfjalksfjkla")
-      divElements.forEach((divElement) => {
-        divElement.style.display = 'none';
-      });
+    console.log(selectedCategory.name,"dsfjalksfjkla")
+    divElements.forEach((divElement) => {
+    divElement.style.display = 'none';
+    });
     }
     else {
-      divElements.forEach((divElement) => {
-        divElement.style.display = 'flex';
-      });
+    divElements.forEach((divElement) => {
+    divElement.style.display = 'flex';
+    });
     }
-    // Iterate over the subcategories of the selected category
-    // let i = 1
-    selectedCategory.subcategories.forEach((subcategory) => {
-      
-      const optionElement = document.createElement("option");
-      // optionElement.value = i;
-      // i++;
-      optionElement.textContent = subcategory.name;
-      subCategorySelect.appendChild(optionElement);
-    });
   }
+
+  selectedCategory.subcategories.forEach((subcategory, index) => {
+    const optionElement = document.createElement("option");
+    const optionValue = index + 1;
+    optionElement.value = optionValue;
+    optionElement.textContent = subcategory.name;
+    subCategorySelect.appendChild(optionElement);
+  });
 };
 
+// Populate attributes dynamically based on the selected category and subcategory
 const populateAttributes = () => {
-  const categorySelect = document.getElementById("productCategory");
-  const subCategorySelect = document.getElementById("productSubCategory");
-  const attributesContainer = document.getElementById("attributesContainer");
-
-  // Clear previous attributes
-  attributesContainer.innerHTML = "";
-
-  // Get the selected category and sub-category
   const selectedCategoryIndex = parseInt(categorySelect.value) - 1;
-  const selectedSubCategoryName = subCategorySelect.value;
+  const selectedSubCategoryIndex = parseInt(subCategorySelect.value) - 1;
   const selectedCategory = categories[selectedCategoryIndex];
+  const selectedSubCategory = selectedCategory.subcategories[selectedSubCategoryIndex];
 
-  // Find the selected sub-category
-  const selectedSubCategory = selectedCategory.subcategories.find(
-    (subcategory) => subcategory.name === selectedSubCategoryName
-  );
+  attributesContainer.innerHTML = ""; // Clear previous attributes
 
-  // Check if the selected sub-category is found
-  if (selectedSubCategory) {
-    // Iterate over the attributes of the selected sub-category
-    selectedSubCategory.attributes.forEach((attribute) => {
-      const labelElement = document.createElement("label");
-      labelElement.textContent = attribute.name;
-      labelElement.className = "form-label";
-      const inputElement = document.createElement("input");
-      inputElement.type = "text";
-      inputElement.name = attribute.name.toLowerCase().replace(/ /g, "_");
-      inputElement.placeholder = attribute.placeholder;
-      inputElement.className = "form-control";
-      attributesContainer.appendChild(labelElement);
-      attributesContainer.appendChild(inputElement);
-    });
-  }
+  selectedSubCategory.attributes.forEach((attribute) => {
+    const labelElement = document.createElement("label");
+    labelElement.textContent = attribute.name;
+    labelElement.className = "form-label";
+    const inputElement = document.createElement("input");
+    inputElement.type = "text";
+    inputElement.name = attribute.name.toLowerCase().replace(/ /g, "_");
+    inputElement.placeholder = attribute.placeholder;
+    inputElement.className = "form-control";
+    attributesContainer.appendChild(labelElement);
+    attributesContainer.appendChild(inputElement);
+  });
 };
 
-const categorySelect = document.getElementById("productCategory");
+// Event listeners
 categorySelect.addEventListener("change", () => {
   populateSubCategoryOptions();
   populateAttributes();
-
 });
 
-const subCategorySelect = document.getElementById("productSubCategory");
 subCategorySelect.addEventListener("change", populateAttributes);
 
+// Initialize the form
+populateCategoryOptions();
 populateSubCategoryOptions();
 populateAttributes();
