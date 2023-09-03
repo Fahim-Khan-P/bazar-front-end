@@ -9,7 +9,7 @@
 }
 
 .dropend:hover > .nav-link{
-  background-color: gray;
+  background-color: rgb(17, 17, 17);
   /* color: blue; */
 
 } 
@@ -141,7 +141,8 @@ a {
 }
 
 .btn-group button {
-  background-color: rgba(43, 43, 43, 0.216);
+  background-color: rgba(43, 43, 43, 0.764);
+  border-radius: 0px;
 }
 
 .btn-group button:hover {

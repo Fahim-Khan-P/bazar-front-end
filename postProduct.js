@@ -1955,7 +1955,7 @@ const categories = [
           placeholder: "Describe the engine and transmission details"
         },
         {
-          name: "Fuel Type",
+          name: "Fuel_Type",
           placeholder: "Specify the fuel type used"
         },
         {
@@ -2071,7 +2071,13 @@ const categories = [
   },
 ];
 
-console.log(categories);
+// // accessing navigation category item! 
+// const categoryDropDown = document.getElementById('categoryDropDown');
+
+// categoryDropDown.addEventListener('click', () => {
+ 
+//   console.log('Element clicked!');
+// });
 
 const populateCategoryOptions = () => {
   const selectElement = document.getElementById("productCategory");
@@ -2118,9 +2124,12 @@ const populateSubCategoryOptions = () => {
       });
     }
     // Iterate over the subcategories of the selected category
+    let i = 1
     selectedCategory.subcategories.forEach((subcategory) => {
+      
       const optionElement = document.createElement("option");
-      optionElement.value = subcategory.name;
+      optionElement.value = i;
+      i++;
       optionElement.textContent = subcategory.name;
       subCategorySelect.appendChild(optionElement);
     });
