@@ -1855,22 +1855,27 @@ const categories = [
     },
     {
       name: "Fruits & Vegetables",
+      id: 72,
       attributes: []
     },
     {
       name: "Meat & Seafood",
+      id: 73,
       attributes: []
     },
     {
       name: "Baby Products",
+      id: 74,
       attributes: []
     },
     {
       name: "Healthcare",
+      id: 75,
       attributes: []
     },
     {
       name: "Household",
+      id: 76,
       attributes: []
     }
     ]
@@ -1880,76 +1885,6 @@ const categories = [
     
     subcategories: [{
       name: "Building Maintenance",
-      id: 72,
-      attributes: [
-        {
-          name: "Type of Services",
-          placeholder: "Describe the type of services offered"
-        },
-        {
-          name: "Working hours",
-          placeholder: "Specify the working hours"
-        }
-      ]
-    },
-    {
-      name: "Domestic & Daycare Services",
-      id: 73,
-      attributes: [
-        {
-          name: "Type of Services",
-          placeholder: "Describe the type of services offered"
-        },
-        {
-          name: "Working hours",
-          placeholder: "Specify the working hours"
-        }
-      ]
-    },
-    {
-      name: "Fitness & Beauty Services",
-      id: 74,
-      attributes: [
-        {
-          name: "Type of Services",
-          placeholder: "Describe the type of services offered"
-        },
-        {
-          name: "Working hours",
-          placeholder: "Specify the working hours"
-        }
-      ]
-    },
-    {
-      name: "IT Services",
-      id: 75,
-      attributes: [
-        {
-          name: "Type of Services",
-          placeholder: "Describe the type of services offered"
-        },
-        {
-          name: "Working hours",
-          placeholder: "Specify the working hours"
-        }
-      ]
-    },
-    {
-      name: "Matrimonial",
-      id: 76,
-      attributes: [
-        {
-          name: "Type of Services",
-          placeholder: "Describe the type of services offered"
-        },
-        {
-          name: "Working hours",
-          placeholder: "Specify the working hours"
-        }
-      ]
-    },
-    {
-      name: "Professional Services",
       id: 77,
       attributes: [
         {
@@ -1963,7 +1898,7 @@ const categories = [
       ]
     },
     {
-      name: "Servicing & Repair",
+      name: "Domestic & Daycare Services",
       id: 78,
       attributes: [
         {
@@ -1977,8 +1912,78 @@ const categories = [
       ]
     },
     {
-      name: "Tours & Travels",
+      name: "Fitness & Beauty Services",
       id: 79,
+      attributes: [
+        {
+          name: "Type of Services",
+          placeholder: "Describe the type of services offered"
+        },
+        {
+          name: "Working hours",
+          placeholder: "Specify the working hours"
+        }
+      ]
+    },
+    {
+      name: "IT Services",
+      id: 80,
+      attributes: [
+        {
+          name: "Type of Services",
+          placeholder: "Describe the type of services offered"
+        },
+        {
+          name: "Working hours",
+          placeholder: "Specify the working hours"
+        }
+      ]
+    },
+    {
+      name: "Matrimonial",
+      id: 81,
+      attributes: [
+        {
+          name: "Type of Services",
+          placeholder: "Describe the type of services offered"
+        },
+        {
+          name: "Working hours",
+          placeholder: "Specify the working hours"
+        }
+      ]
+    },
+    {
+      name: "Professional Services",
+      id: 82,
+      attributes: [
+        {
+          name: "Type of Services",
+          placeholder: "Describe the type of services offered"
+        },
+        {
+          name: "Working hours",
+          placeholder: "Specify the working hours"
+        }
+      ]
+    },
+    {
+      name: "Servicing & Repair",
+      id: 83,
+      attributes: [
+        {
+          name: "Type of Services",
+          placeholder: "Describe the type of services offered"
+        },
+        {
+          name: "Working hours",
+          placeholder: "Specify the working hours"
+        }
+      ]
+    },
+    {
+      name: "Tours & Travels",
+      id: 84,
       attributes: [{
         name: "Type of Services",
         placeholder: "Describe the type of services offered"
@@ -1991,7 +1996,7 @@ const categories = [
     },
     {
       name: "Mobile Phone Services",
-      id: 80,
+      id: 85,
       attributes: [{
         name: "Type of Services",
         placeholder: "Describe the type of services offered"
@@ -2008,7 +2013,7 @@ const categories = [
     },
     {
       name: "Auto Services",
-      id: 81,
+      id: 86,
       attributes: [{
         name: "Car Type",
         placeholder: "Specify the type of car"
@@ -2029,7 +2034,7 @@ const categories = [
     name: "Agriculture",
     subcategories: [{
       name: "Crops, Seeds & Plants",
-      id: 82,
+      id: 87,
       attributes: [
         {
           name: "Type",
@@ -2055,7 +2060,7 @@ const categories = [
     },
     {
       name: "Farming Tools & Machinery",
-      id: 83,
+      id: 88,
       attributes: [{
         name: "Year",
         placeholder: "Specify the year of manufacture"
@@ -2088,7 +2093,7 @@ const categories = [
     },
     {
       name: "Other Agriculture",
-      id: 84,
+      id: 89,
       attributes: [
         {
           name: "Specific Attributes",
@@ -2102,7 +2107,7 @@ const categories = [
     name: "Grains",
     subcategories: [{
       name: "Rice",
-      id: 85,
+      id: 90,
       attributes: [
         {
           name: "Place",
@@ -2116,7 +2121,7 @@ const categories = [
     },
     {
       name: "Corn",
-      id: 86,
+      id: 91,
       attributes: [
         {
           name: "Place",
@@ -2130,7 +2135,7 @@ const categories = [
     },
     {
       name: "Wheat",
-      id: 87,
+      id: 92,
       attributes: [
         {
           name: "Place",
@@ -2144,7 +2149,7 @@ const categories = [
     },
     {
       name: "Barley",
-      id: 88,
+      id: 93,
       attributes: [{
         name: "Place",
         placeholder: "Specify the place of origin"
