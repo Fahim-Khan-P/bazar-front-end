@@ -4,10 +4,12 @@ const categories = [
     subcategories: [
       {
         name: "Mobile Phones",
+        id: 1,
         attributes: []
       },
       {
         name: "Mobile Phone Accessories",
+        id: 2,
         attributes: [
           {
             name: "Compatibility",
@@ -25,6 +27,7 @@ const categories = [
       },
       {
         name: "Wearables",
+        id: 3,
         attributes: [
           {
             name: "Compatibility",
@@ -42,6 +45,7 @@ const categories = [
       },
       {
         name: "SIM Cards",
+        id: 4,
         attributes: [
           {
             name: "Network name ",
@@ -60,6 +64,7 @@ const categories = [
     subcategories: [
       {
         name: "Desktop Computers",
+        id: 5,
         attributes: [
           {
             name: "RAM",
@@ -89,6 +94,7 @@ const categories = [
       },
       {
         name: "Laptops",
+        id: 6,
         attributes: [
           {
             name: "RAM",
@@ -122,6 +128,7 @@ const categories = [
       },
       {
         name: "Laptop & Computer Accessories",
+        id: 7,
         attributes: [
           {
             name: "Specifications",
@@ -148,6 +155,7 @@ const categories = [
       },
       {
         name: "Tablets & Accessories",
+        id: 8,
         attributes: [
           {
             name: "Specifications",
@@ -177,6 +185,7 @@ const categories = [
       },
       {
         name: "TVs",
+        id: 9,
         attributes: [
           {
             name: "Size",
@@ -218,6 +227,7 @@ const categories = [
       },
       {
         name: "Home Appliances",
+        id: 10,
         attributes: [
           {
             name: "Type of Appliance",
@@ -248,6 +258,7 @@ const categories = [
 
       {
         name: "Cameras, Camcorders & Accessories",
+        id: 11,
         attributes: [
           {
             name: "LCD Screen",
@@ -308,6 +319,7 @@ const categories = [
       },
       {
         name: "ACs & Home Electronics",
+        id: 12,
         attributes: [
 
           {
@@ -335,6 +347,7 @@ const categories = [
       },
       {
         name: "Audio & Sound Systems",
+        id: 13,
         attributes: [
 
           {
@@ -342,89 +355,93 @@ const categories = [
             placeholder: "Enter frequency interval"
           }
         ]
-      }
+      },
+      {
+        name: "Video Game Consoles & Accessories",
+        id: 14,
+        attributes: [
+    
+          {
+            name: "Storage",
+            placeholder: "Enter storage capacity"
+          },
+    
+          {
+            name: "Games",
+            placeholder: "List game types"
+          },
+          {
+            name: "Connectivity",
+            placeholder: "Specify connectivity with sources"
+          },
+          {
+            name: "Included Accessories",
+            placeholder: "Mention any accessories or components "
+          },
+          {
+            name: "Controllers",
+            placeholder: "Write controller details"
+          },
+          {
+            name: "Resolution",
+            placeholder: "Write resolution size"
+          },
+          {
+            name: "Operating system compatibility",
+            placeholder: "Write compitible devices"
+          },
+          {
+            name: "Speed",
+            placeholder: "Write speed details"
+          }
+    
+    
+        ]
+      },
+    
+      {
+        name: "Photocopiers",
+        id: 15,
+        attributes: [
+    
+          {
+            name: "Printing speed",
+            placeholder: "Enter printing speed details"
+          },
+    
+          {
+            name: "Paper handling capacity",
+            placeholder: "Enter handling speed"
+          },
+          {
+            name: "Network Connectivity",
+            placeholder: "Specify Network Connectivity with sources"
+          },
+          {
+            name: "Duplex printing",
+            placeholder: "Enter duplez print support details"
+          },
+          {
+            name: "Document scanning",
+            placeholder: "Enter scanning details"
+          },
+          {
+            name: "Resolution",
+            placeholder: "Write resolution size"
+          }
+        ]
+      },
     ]
   },
 
-  {
-    name: "Video Game Consoles & Accessories",
-    attributes: [
-
-      {
-        name: "Storage",
-        placeholder: "Enter storage capacity"
-      },
-
-      {
-        name: "Games",
-        placeholder: "List game types"
-      },
-      {
-        name: "Connectivity",
-        placeholder: "Specify connectivity with sources"
-      },
-      {
-        name: "Included Accessories",
-        placeholder: "Mention any accessories or components "
-      },
-      {
-        name: "Controllers",
-        placeholder: "Write controller details"
-      },
-      {
-        name: "Resolution",
-        placeholder: "Write resolution size"
-      },
-      {
-        name: "Operating system compatibility",
-        placeholder: "Write compitible devices"
-      },
-      {
-        name: "Speed",
-        placeholder: "Write speed details"
-      }
-
-
-    ]
-  },
-
-  {
-    name: "Photocopiers",
-    attributes: [
-
-      {
-        name: "Printing speed",
-        placeholder: "Enter printing speed details"
-      },
-
-      {
-        name: "Paper handling capacity",
-        placeholder: "Enter handling speed"
-      },
-      {
-        name: "Network Connectivity",
-        placeholder: "Specify Network Connectivity with sources"
-      },
-      {
-        name: "Duplex printing",
-        placeholder: "Enter duplez print support details"
-      },
-      {
-        name: "Document scanning",
-        placeholder: "Enter scanning details"
-      },
-      {
-        name: "Resolution",
-        placeholder: "Write resolution size"
-      }
-    ]
-  },
+ 
 
   {
     name: "Vehicles",
     subcategories: [
       {
         name: "Cars",
+        id: 16,
         attributes: [
           {
             name: "Year",
@@ -480,6 +497,7 @@ const categories = [
       },
       {
         name: "Motorbike",
+        id: 17,
         attributes: [
           {
             name: "Year",
@@ -535,6 +553,7 @@ const categories = [
       },
       {
         name: "Three Wheelers",
+        id: 18,
         attributes: [
           {
             name: "Year",
@@ -590,6 +609,7 @@ const categories = [
       },
       {
         name: "Vans",
+        id: 19,
         attributes: [
           {
             name: "Year",
@@ -645,6 +665,7 @@ const categories = [
       },
       {
         name: "Trucks",
+        id: 20,
         attributes: [
           {
             name: "Year",
@@ -700,6 +721,7 @@ const categories = [
       },
       {
         name: "Buses",
+        id: 21,
         attributes: [
           {
             name: "Year",
@@ -759,6 +781,7 @@ const categories = [
       },
       {
         name: "Heavy Duty",
+        id: 22,
         attributes: [
           {
             name: "Year",
@@ -818,6 +841,7 @@ const categories = [
       },
       {
         name: "Water Transport",
+        id: 23,
         attributes: [
           {
             name: "Year",
@@ -877,6 +901,7 @@ const categories = [
       },
       {
         name: "Bicycles",
+        id: 24,
         attributes: [
           {
             name: "Year",
@@ -907,6 +932,7 @@ const categories = [
       },
       {
         name: "Auto Parts & Accessories",
+        id: 25,
         attributes: [
           {
             name: "Car Type",
@@ -921,6 +947,7 @@ const categories = [
       },
       {
         name: "Rental",
+        id: 26,
         attributes: [
           {
             name: "Year",
@@ -979,6 +1006,7 @@ const categories = [
     subcategories: [
       {
         name: "Land For Sale",
+        id: 27,
         attributes: [
           {
             name: "Type of property",
@@ -996,6 +1024,7 @@ const categories = [
       },
       {
         name: "Apartaments For Sale",
+        id: 28,
         attributes: [
           {
             name: "Type of property",
@@ -1013,6 +1042,7 @@ const categories = [
       },
       {
         name: "Houses For Sale",
+        id: 29,
         attributes: [
           {
             name: "Type of property",
@@ -1030,6 +1060,7 @@ const categories = [
       },
       {
         name: "Commercial Properties For Sale",
+        id: 30,
         attributes: [
           {
             name: "Type of property",
@@ -1047,6 +1078,7 @@ const categories = [
       },
       {
         name: "New Projects",
+        id: 31,
         attributes: [
           {
             name: "Type of property",
@@ -1068,6 +1100,7 @@ const categories = [
     name: "Home & living",
     subcategories: [{
       name: "Living Room Furniture",
+      id: 32,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the furniture"
@@ -1092,6 +1125,7 @@ const categories = [
     },
     {
       name: "Kitchen & Dining Furniture",
+      id: 33,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the furniture"
@@ -1116,6 +1150,7 @@ const categories = [
     },
     {
       name: "Bedroom Furniture",
+      id: 34,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the furniture"
@@ -1140,6 +1175,7 @@ const categories = [
     },
     {
       name: "Office & Shop Furniture",
+      id: 35,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the furniture"
@@ -1164,6 +1200,7 @@ const categories = [
     },
     {
       name: "Children's Furniture",
+      id: 36,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the furniture"
@@ -1188,6 +1225,7 @@ const categories = [
     },
     {
       name: "Household Items",
+      id: 37,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the item"
@@ -1212,6 +1250,7 @@ const categories = [
     },
     {
       name: "Bathroom Products",
+      id: 38,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the product"
@@ -1236,6 +1275,7 @@ const categories = [
     },
     {
       name: "Doors",
+      id: 39,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the door"
@@ -1260,6 +1300,7 @@ const categories = [
     },
     {
       name: "Home Textiles & Decoration",
+      id: 40,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the door"
@@ -1288,6 +1329,7 @@ const categories = [
     name: "Kids' Fashion",
     subcategories: [{
       name: "Toys",
+      id: 41,
       attributes: [{
         name: "Type",
         placeholder: "Describe the type of toy"
@@ -1295,6 +1337,7 @@ const categories = [
     },
     {
       name: "Traditional Wear",
+      id: 42,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the traditional wear"
@@ -1315,6 +1358,7 @@ const categories = [
     },
     {
       name: "Winter Wear",
+      id: 43,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the winter wear"
@@ -1335,6 +1379,7 @@ const categories = [
     },
     {
       name: "Western Wear",
+      id: 44,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the western wear"
@@ -1355,6 +1400,7 @@ const categories = [
     },
     {
       name: "Bags & Accessories",
+      id: 45,
       attributes: [{
         name: "Type",
         placeholder: "Describe the type of bag/accessory"
@@ -1362,6 +1408,7 @@ const categories = [
     },
     {
       name: "Footwear",
+      id: 46,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the footwear"
@@ -1382,6 +1429,7 @@ const categories = [
     },
     {
       name: "Sleepwear",
+      id: 47,
       attributes: [{
         name: "Size",
         placeholder: "Specify the available sizes"
@@ -1400,8 +1448,10 @@ const categories = [
   },
   {
     name: "Men's Fashion",
+    
     subcategories: [{
       name: "Jacket & Coat",
+      id: 48,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the jacket/coat"
@@ -1418,6 +1468,7 @@ const categories = [
     },
     {
       name: "Shirts & T-Shirts",
+      id: 49,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the shirt/t-shirt"
@@ -1434,6 +1485,7 @@ const categories = [
     },
     {
       name: "Pants",
+      id: 50,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the pants"
@@ -1450,6 +1502,7 @@ const categories = [
     },
     {
       name: "Traditional Clothing",
+      id: 51,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the traditional clothing"
@@ -1466,6 +1519,7 @@ const categories = [
     },
     {
       name: "Grooming & Bodycare",
+      id: 52,
       attributes: [{
         name: "Type",
         placeholder: "Describe the type of grooming/bodycare product"
@@ -1482,6 +1536,7 @@ const categories = [
     },
     {
       name: "Optical & Sunglasses",
+      id: 53,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the optical/sunglasses"
@@ -1498,6 +1553,7 @@ const categories = [
     },
     {
       name: "Baby Boy's Fashion",
+      id: 54,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the baby boy's fashion item"
@@ -1514,6 +1570,7 @@ const categories = [
     },
     {
       name: "Bags & Accessories",
+      id: 55,
       attributes: [{
         name: "Type",
         placeholder: "Describe the type of bag/accessory"
@@ -1530,6 +1587,7 @@ const categories = [
     },
     {
       name: "Footwear",
+      id: 56,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the footwear"
@@ -1546,6 +1604,7 @@ const categories = [
     },
     {
       name: "Watches",
+      id: 57,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the watch"
@@ -1567,6 +1626,7 @@ const categories = [
     name: "Women's Fashion",
     subcategories: [{
       name: "Traditional Wear",
+      id: 58,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the traditional wear"
@@ -1583,6 +1643,7 @@ const categories = [
     },
     {
       name: "Winter Wear",
+      id: 59,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the winter wear"
@@ -1599,6 +1660,7 @@ const categories = [
     },
     {
       name: "Western Wear",
+      id: 60,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the western wear"
@@ -1615,6 +1677,7 @@ const categories = [
     },
     {
       name: "Bags & Accessories",
+      id: 61,
       attributes: [{
         name: "Type",
         placeholder: "Describe the type of bag/accessory"
@@ -1631,6 +1694,7 @@ const categories = [
     },
     {
       name: "Footwear",
+      id: 62,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the footwear"
@@ -1647,6 +1711,7 @@ const categories = [
     },
     {
       name: "Lingerie & Sleepwear",
+      id: 63,
       attributes: [{
         name: "Type",
         placeholder: "Describe the type of lingerie/sleepwear"
@@ -1663,6 +1728,7 @@ const categories = [
     },
     {
       name: "Jewelry & Watches",
+      id: 64,
       attributes: [{
         name: "Type",
         placeholder: "Describe the type of jewelry/watch"
@@ -1679,6 +1745,7 @@ const categories = [
     },
     {
       name: "Beauty & Personal Care",
+      id: 65,
       attributes: [{
         name: "Type",
         placeholder: "Describe the type of beauty/personal care product"
@@ -1695,6 +1762,7 @@ const categories = [
     },
     {
       name: "Optical & Sunglasses",
+      id: 66,
       attributes: [{
         name: "Style",
         placeholder: "Describe the style of the optical/sunglasses"
@@ -1715,6 +1783,7 @@ const categories = [
     name: "Sport",
     subcategories: [{
       name: "Sports Wear",
+      id: 67,
       attributes: [{
         name: "Size",
         placeholder: "Specify the available sizes"
@@ -1727,6 +1796,7 @@ const categories = [
     },
     {
       name: "Fitness & Gym",
+      id: 68,
       attributes: [{
         name: "Usage",
         placeholder: "Enter usage details"
@@ -1742,6 +1812,7 @@ const categories = [
     name: "Education",
     subcategories: [{
       name: "Textbooks",
+      id: 69,
       attributes: [{
         name: "Subject",
         placeholder: "Specify the subject of the textbook"
@@ -1758,6 +1829,7 @@ const categories = [
     },
     {
       name: "Books",
+      id: 70,
       attributes: [{
         name: "Title",
         placeholder: "Specify the title of the book"
@@ -1778,6 +1850,7 @@ const categories = [
     name: "Essentials",
     subcategories: [{
       name: "Grocery",
+      id: 71,
       attributes: []
     },
     {
@@ -1804,8 +1877,10 @@ const categories = [
   },
   {
     name: "Services",
+    
     subcategories: [{
       name: "Building Maintenance",
+      id: 72,
       attributes: [
         {
           name: "Type of Services",
@@ -1819,6 +1894,7 @@ const categories = [
     },
     {
       name: "Domestic & Daycare Services",
+      id: 73,
       attributes: [
         {
           name: "Type of Services",
@@ -1832,6 +1908,7 @@ const categories = [
     },
     {
       name: "Fitness & Beauty Services",
+      id: 74,
       attributes: [
         {
           name: "Type of Services",
@@ -1845,6 +1922,7 @@ const categories = [
     },
     {
       name: "IT Services",
+      id: 75,
       attributes: [
         {
           name: "Type of Services",
@@ -1858,6 +1936,7 @@ const categories = [
     },
     {
       name: "Matrimonial",
+      id: 76,
       attributes: [
         {
           name: "Type of Services",
@@ -1871,6 +1950,7 @@ const categories = [
     },
     {
       name: "Professional Services",
+      id: 77,
       attributes: [
         {
           name: "Type of Services",
@@ -1884,6 +1964,7 @@ const categories = [
     },
     {
       name: "Servicing & Repair",
+      id: 78,
       attributes: [
         {
           name: "Type of Services",
@@ -1897,6 +1978,7 @@ const categories = [
     },
     {
       name: "Tours & Travels",
+      id: 79,
       attributes: [{
         name: "Type of Services",
         placeholder: "Describe the type of services offered"
@@ -1909,6 +1991,7 @@ const categories = [
     },
     {
       name: "Mobile Phone Services",
+      id: 80,
       attributes: [{
         name: "Type of Services",
         placeholder: "Describe the type of services offered"
@@ -1925,6 +2008,7 @@ const categories = [
     },
     {
       name: "Auto Services",
+      id: 81,
       attributes: [{
         name: "Car Type",
         placeholder: "Specify the type of car"
@@ -1945,6 +2029,7 @@ const categories = [
     name: "Agriculture",
     subcategories: [{
       name: "Crops, Seeds & Plants",
+      id: 82,
       attributes: [
         {
           name: "Type",
@@ -1970,6 +2055,7 @@ const categories = [
     },
     {
       name: "Farming Tools & Machinery",
+      id: 83,
       attributes: [{
         name: "Year",
         placeholder: "Specify the year of manufacture"
@@ -2002,6 +2088,7 @@ const categories = [
     },
     {
       name: "Other Agriculture",
+      id: 84,
       attributes: [
         {
           name: "Specific Attributes",
@@ -2015,6 +2102,7 @@ const categories = [
     name: "Grains",
     subcategories: [{
       name: "Rice",
+      id: 85,
       attributes: [
         {
           name: "Place",
@@ -2028,6 +2116,7 @@ const categories = [
     },
     {
       name: "Corn",
+      id: 86,
       attributes: [
         {
           name: "Place",
@@ -2041,6 +2130,7 @@ const categories = [
     },
     {
       name: "Wheat",
+      id: 87,
       attributes: [
         {
           name: "Place",
@@ -2054,6 +2144,7 @@ const categories = [
     },
     {
       name: "Barley",
+      id: 88,
       attributes: [{
         name: "Place",
         placeholder: "Specify the place of origin"
@@ -2108,9 +2199,9 @@ const populateSubCategoryOptions = () => {
     }
   }
 
-  selectedCategory.subcategories.forEach((subcategory, index) => {
+  selectedCategory.subcategories.forEach((subcategory) => {
     const optionElement = document.createElement("option");
-    const optionValue = index + 1;
+    const optionValue = subcategory.id;
     optionElement.value = optionValue;
     optionElement.textContent = subcategory.name;
     subCategorySelect.appendChild(optionElement);
@@ -2120,7 +2211,7 @@ const populateSubCategoryOptions = () => {
 // Populate attributes dynamically based on the selected category and subcategory
 const populateAttributes = () => {
   const selectedCategoryIndex = parseInt(categorySelect.value) - 1;
-  const selectedSubCategoryIndex = parseInt(subCategorySelect.value) - 1;
+  const selectedSubCategoryIndex = subCategorySelect.selectedIndex;
   const selectedCategory = categories[selectedCategoryIndex];
   const selectedSubCategory = selectedCategory.subcategories[selectedSubCategoryIndex];
 
