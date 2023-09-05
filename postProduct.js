@@ -1940,7 +1940,7 @@ const categories = [
       ]
     },
     {
-      name: "Matrimonial",
+      name: "Funeral equipment",
       id: 81,
       attributes: [
         {
