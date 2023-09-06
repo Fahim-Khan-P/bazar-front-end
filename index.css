@@ -9,10 +9,10 @@
 }
 
 .dropend:hover > .nav-link{
-  background-color: gray;
+  background-color: rgb(17, 17, 17);
   /* color: blue; */
 
-}
+} 
 
 .category-card {
   height: 100%;
@@ -25,15 +25,12 @@
 .category-card {
   transition: transform 0.3s;
   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-}
-.dropdown-submenu {
-  position: relative;
+  border-radius: 5px;
 }
 
-.dropdown-submenu .dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -1px;
+.category-card:hover {
+  border: 1px solid blue;
+  border-radius: 6px;
 }
 
 .card-title {
@@ -47,6 +44,22 @@
 a {
   text-decoration: none;
 }
+
+.search {
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  box-shadow: 0 1px 1px rgba(37, 37, 37, 0.214);
+  transition: box-shadow 0.3s ease;
+  color: black;
+}
+
+.search:focus {
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 /* model style  */
   /* Set the Modal background */
@@ -107,13 +120,45 @@ a {
   }
 /* model style end  */
 
-/* @media (min-width: 992px) {
-  .col-lg-1 {
-    flex: 0 0 auto;
-    width: 14.285714%; /* Set your desired width here */
-    margin-bottom: 10px; /* Adjust the margin-bottom as needed */
-  }
-} */
+/* Start of .dropdown-menu style */
+/* arrow is the id of every ">" in .dropdown-menu list button  */
+#arrow1,
+#arrow2,
+#arrow3,
+#arrow5,
+#arrow6,
+#arrow7,
+#arrow8,
+#arrow9,
+#arrow10,
+#arrow11,
+#arrow12,
+#arrow13,
+#arrow14,
+#arrow15 {
+  padding-right: 1.75rem;
+  /* padding-left: 0.75rem; */
+}
 
+.btn-group button {
+  background-color: rgba(43, 43, 43, 0.764);
+  border-radius: 0px;
+}
 
+.btn-group button:hover {
+  background-color: rgb(240, 255, 255);
+  border-radius: 0;
+}
+#dropdownMainUl {
+  /* display: grid; */
+  grid-template-columns: 100%;
+}
 
+#dropdownMainUl div {
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+#dropdownMainUl {
+ border: none;
+ background: transparent;
+}

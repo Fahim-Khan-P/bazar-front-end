@@ -1,3 +1,87 @@
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-item {
+  display: none;
+  position: relative;
+}
+
+.carousel-item:first-child {
+  display: block;
+}
+
+.carousel-open:checked + .carousel-item {
+  display: block;
+}
+
+.carousel-control {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background: #000;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.control-1,
+.control-2 {
+  display: none;
+}
+
+.carousel-open:checked + .carousel-control + .control-2:checked ~ .control-1,
+.carousel-open:checked + .carousel-control + .control-1:checked ~ .control-2 {
+  display: block;
+}
+
+.card {
+  max-width: 300px;
+  margin: 10px;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.card-img {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.card-table th,
+.card-table td {
+  padding: 5px;
+}
+
+.card-img:hover {
+  transform: scale(1.1);
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* Navbar background and height */
 #logo {
   margin-left: 50%;
@@ -72,7 +156,8 @@ a {
 }
 
 .btn-group button {
-  background-color: rgba(43, 43, 43, 0.216);
+  background-color: rgba(43, 43, 43, 0.852);
+  border-radius: 0px;
 }
 
 .btn-group button:hover {

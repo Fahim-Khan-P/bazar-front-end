@@ -616,12 +616,12 @@
             <!-- end of category dropdown menu  -->
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Post Ads</a
+              <a class="nav-link active" aria-current="page" href="./postProduct.html"
+                >Post ads</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./homePage.html">Request Ads</a>
+              <a class="nav-link" href="./requestProduct.html">Request Product</a>
             </li>
             <li class="nav-item">
               <a
@@ -868,7 +868,7 @@
 
     <div class="container">
       <div class="container mt-5 col-md-8">
-        <h2>Product Details</h2>
+        <h2>Request Product Page</h2>
         <form method="POST" action="{{route('product.store')}}" enctype="multipart/form-data">
           <!-- @csrf -->
 
@@ -930,7 +930,7 @@
           </div>
           <div class="mb-3">
             <label for="image" class="form-label">Product Image</label>
-            <input type="file" class="form-control" id="image" name="image[]" multiple accept="image/*" required>
+            <input type="file" class="form-control" id="image" required>
           </div>
           <button type="submit" class="btn btn-primary">Create Product</button>
         </form>
