@@ -9,7 +9,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="sliderScript.js" defer></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -23,7 +24,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="./postProduct.js"></script>
+    <script src="./sliderScript.js"></script>
     <link rel="stylesheet" href="./homePage.css" />
+    <link rel="stylesheet" href="./sliderStyle.css" />
+
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -900,146 +904,166 @@
       </a>
     </div>
 
+<!-- start of slider  -->
+<div class="slider">
+  <div class="wrapper">
+    <i id="left" class="fa-solid fa-angle-left"></i>
+    <ul class="carousel">
+      <li class="card">
+        <div class="img"><img src="./assets/living.jpg" alt="img" draggable="false"></div>
+        <h2>Product Name</h2>
+        <p class="card-text">
+         <strong>Category:</strong> Category Name<br />
+         <strong>Sub-Category:</strong> Sub-Category<br />
+         <strong>Model:</strong> Model Number
+        </p>
+        <table class="table card-table">
+          <tbody>
+            <tr>
+              <th>Brand</th>
+              <td>Brand Name</td>
+            </tr>
+            <tr>
+              <th>Size</th>
+              <td>Value</td>
+            </tr>
+            <tr>
+              <th>Product Year</th>
+              <td>Value</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li class="card">
+        <div class="img"><img src="./assets/essentials.jpg" alt="img" draggable="false"></div>
+        <h2>Product Name</h2>
+        <p class="card-text">
+          <strong>Category:</strong> Category Name<br />
+         <strong>Sub-Category:</strong> Sub-Category<br />
+         <strong>Model:</strong> Model Number
+        </p>
+        <table class="table card-table">
+          <tbody>
+            <tr>
+              <th>Brand</th>
+              <td>Brand Name</td>
+            </tr>
+            <tr>
+              <th>Size</th>
+              <td>Value</td>
+            </tr>
+            <tr>
+              <th>Product Year</th>
+              <td>Value</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li class="card">
+        <div class="img"><img src="./assets/agreecalture.jpg" alt="img" draggable="false"></div>
+        <h2>Product Name</h2>
+        <p class="card-text">
+          <strong>Category:</strong> Category Name<br />
+          <strong>Sub-Category:</strong> Sub-Category<br />
+          <strong>Model:</strong> Model Number
+        </p>
+        <table class="table card-table">
+          <tbody>
+            <tr>
+              <th>Brand</th>
+              <td>Brand Name</td>
+            </tr>
+            <tr>
+              <th>Size</th>
+              <td>Value</td>
+            </tr>
+            <tr>
+              <th>Product Year</th>
+              <td>Value</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li class="card">
+        <div class="img"><img src="./assets/education.png" alt="img" draggable="false"></div>
+        <h2>Product Name</h2>
+        <p class="card-text">
+          <strong>Category:</strong> Category Name<br />
+          <strong>Sub-Category:</strong> Sub-Category<br />
+          <strong>Model:</strong> Model Number
+        </p>
+        <table class="table card-table">
+          <tbody>
+            <tr>
+              <th>Brand</th>
+              <td>Brand Name</td>
+            </tr>
+            <tr>
+              <th>Size</th>
+              <td>Value</td>
+            </tr>
+            <tr>
+              <th>Product Year</th>
+              <td>Value</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li class="card">
+        <div class="img"><img src="./assets/services.jpg" alt="img" draggable="false"></div>
+        <h2>Product Name</h2>
+        <p class="card-text">
+          <strong>Category:</strong> Category Name<br />
+         <strong>Sub-Category:</strong> Sub-Category<br />
+         <strong>Model:</strong> Model Number
+        </p>
+        <table class="table card-table">
+          <tbody>
+            <tr>
+              <th>Brand</th>
+              <td>Brand Name</td>
+            </tr>
+            <tr>
+              <th>Size</th>
+              <td>Value</td>
+            </tr>
+            <tr>
+              <th>Product Year</th>
+              <td>Value</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li class="card">
+        <div class="img"><img src="./assets/grains.jpg" alt="img" draggable="false"></div>
+        <h2>Product Name</h2>
+        <p class="card-text">
+          <strong>Category:</strong> Category Name<br />
+         <strong>Sub-Category:</strong> Sub-Category<br />
+         <strong>Model:</strong> Model Number
+        </p>
+        <table class="table card-table">
+          <tbody>
+            <tr>
+              <th>Brand</th>
+              <td>Brand Name</td>
+            </tr>
+            <tr>
+              <th>Size</th>
+              <td>Value</td>
+            </tr>
+            <tr>
+              <th>Product Year</th>
+              <td>Value</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ul>
+    <i id="right" class="fa-solid fa-angle-right"></i>
+  </div>
+</div>
 
-    <div class="container">
-      <div class="row d-flex">
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="card">
-            <img
-              src="./assets/agreecalture.jpg"
-              class="card-img"
-              alt="Product Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product Name 1</h5>
-              <p class="card-text">
-                Category: Category Name<br />
-                Sub-Category: Sub-Category Name<br />
-                Model: Model Number
-              </p>
-              <table class="table card-table">
-                <tbody>
-                  <tr>
-                    <th>Brand</th>
-                    <td>Brand Name</td>
-                  </tr>
-                  <tr>
-                    <th>Size</th>
-                    <td>Value</td>
-                  </tr>
-                  <tr>
-                    <th>Product Year</th>
-                    <td>Value</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="card">
-            <img
-              src="./assets/agreecalture.jpg"
-              class="card-img"
-              alt="Product Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product Name 2</h5>
-              <p class="card-text">
-                Category: Category Name<br />
-                Sub-Category: Sub-Category Name<br />
-                Model: Model Number
-              </p>
-              <table class="table card-table">
-                <tbody>
-                  <tr>
-                    <th>Brand</th>
-                    <td>Brand Name</td>
-                  </tr>
-                  <tr>
-                    <th>Size</th>
-                    <td>Value</td>
-                  </tr>
-                  <tr>
-                    <th>Product Year</th>
-                    <td>Value</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="card">
-            <img
-              src="./assets/agreecalture.jpg"
-              class="card-img"
-              alt="Product Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product Name 3</h5>
-              <p class="card-text">
-                Category: Category Name<br />
-                Sub-Category: Sub-Category Name<br />
-                Model: Model Number
-              </p>
-              <table class="table card-table">
-                <tbody>
-                  <tr>
-                    <th>Brand</th>
-                    <td>Brand Name</td>
-                  </tr>
-                  <tr>
-                    <th>Size</th>
-                    <td>Value</td>
-                  </tr>
-                  <tr>
-                    <th>Product Year</th>
-                    <td>Value</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="card">
-            <img
-              src="./assets/agreecalture.jpg"
-              class="card-img"
-              alt="Product Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product Name 4</h5>
-              <p class="card-text">
-                Category: Category Name<br />
-                Sub-Category: Sub-Category Name<br />
-                Model: Model Number
-              </p>
-              <table class="table card-table">
-                <tbody>
-                  <tr>
-                    <th>Brand</th>
-                    <td>Brand Name</td>
-                  </tr>
-                  <tr>
-                    <th>Size</th>
-                    <td>Value</td>
-                  </tr>
-                  <tr>
-                    <th>Product Year</th>
-                    <td>Value</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- List of external links  -->
   </body>
