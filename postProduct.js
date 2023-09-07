@@ -2169,57 +2169,65 @@ const pashtoCategories = [
     name: "موبایلونه",
     subcategories: [
       {
-        name: "Mobile Phones",
+        name: "مبایل او ټلیفون",
         id: 1,
         attributes: []
       },
       {
-        name: "Mobile Phone Accessories",
+        name: "مبایل اړوند سامان",
         id: 2,
         attributes: [
           {
             name: "Compatibility",
-            placeholder: "Compatility with devices..."
+            text: "ورته والی",
+            placeholder: "له نورو آلو سره ورته والی"
           },
           {
             name: "Type of Accessory",
-            placeholder: "Coler, Headphone..."
+            text: "د سامان ډول",
+            placeholder: "ګوشکي، چارجر"
           },
           {
             name: "Functionality",
-            placeholder: "Write some main functionalites..."
+            text: "دندې",
+            placeholder: "یو څو مهمې دندې یې ولیکئ"
           }
         ]
       },
       {
-        name: "Wearables",
+        name: "پوښ او کاور",
         id: 3,
         attributes: [
           {
             name: "Compatibility",
-            placeholder: "Compatility with devices..."
+            text: "ورته والی",
+            placeholder: "له نورو آلو سره ورته والی"
           },
           {
             name: "Type of Accessory",
-            placeholder: "Coler, Headphone..."
+            text: "د سامان ډول",
+            placeholder: "ګوشکي، چارجر"
           },
           {
             name: "Functionality",
-            placeholder: "Write some main functionalites..."
+            text: "دندې",
+            placeholder: "یو څو مهمې دندې یې ولیکئ"
           }
         ]
       },
       {
-        name: "SIM Cards",
+        name: "سیم کارت",
         id: 4,
         attributes: [
           {
             name: "Network name ",
-            placeholder: "Etisalat, Roshan, MTN ..."
+            text: "د شبکې نوم",
+            placeholder: "اتصالات، روشن، بیسم ..."
           },
           {
             name: "Sim number",
-            placeholder: "Type your sim number"
+            text: "د سیم کارت نمبر",
+            placeholder: "د سیم کارت نمبر ولیکئ"
           }
         ]
       },
@@ -2229,336 +2237,396 @@ const pashtoCategories = [
     name: "برېښنایی وسایل",
     subcategories: [
       {
-        name: "Desktop Computers",
+        name: "ډیسکټاپ",
         id: 5,
         attributes: [
           {
             name: "RAM",
-            placeholder: "Enter size of RAM"
+            text: "رم",
+            placeholder: "څومره رم لري؟"
           },
           {
             name: "CPU",
-            placeholder: "Number of CPU"
+            text: "پروسسر",
+            placeholder: "څو پروسسر لري؟"
           },
           {
             name: "Display(Monitor)",
-            placeholder: "Size of Display"
+            text: "مانيټور",
+            placeholder: "د ډیسپلې سایز او ډول"
           },
           {
             name: "Ports and Connectivity",
-            placeholder: "Enter type of ports"
+            text: "پورټونه",
+            placeholder: "څو او کوم پورټونه لري"
           },
           {
             name: "Graphics Performance",
-            placeholder: "Enter graphic details"
+            text: "ګرافیک",
+            placeholder: "څومره او څه ډول ګرافیک لري؟"
           },
           {
             name: "Storage",
-            placeholder: "Enter size of storage"
+            text: "ذخیره",
+            placeholder: "څومره ذخیره لري"
           },
         ]
       },
       {
-        name: "Laptops",
+        name: "لپټاپ",
         id: 6,
         attributes: [
           {
             name: "RAM",
-            placeholder: "Enter size of RAM"
+            text: "رم",
+            placeholder: "څومره رم لري؟"
           },
           {
             name: "CPU",
-            placeholder: "Number of CPU"
+            text: "پروسسر",
+            placeholder: "څو پروسسر لري؟"
           },
           {
             name: "Display(Laptop)",
-            placeholder: "Size of Display"
+            text: "مانيټور",
+            placeholder: "د ډیسپلې سایز او ډول"
           },
           {
             name: "Ports and Connectivity",
-            placeholder: "Enter type of ports"
+            text: "پورټونه",
+            placeholder: "څو او کوم پورټونه لري"
           },
           {
             name: "Graphics Performance",
-            placeholder: "Enter graphic details"
-          },
-          {
-            name: "Bettery Life",
-            placeholder: "Enter bettery performance"
+            text: "ګرافیک",
+            placeholder: "څومره او څه ډول ګرافیک لري؟"
           },
           {
             name: "Storage",
-            placeholder: "Enter size of storage"
+            text: "ذخیره",
+            placeholder: "څومره ذخیره لري"
+          },
+          {
+            name: "Bettery Life",
+            text: "بتري",
+            placeholder: "د بټري اړوند مالومات"
           },
         ]
       },
       {
-        name: "Laptop & Computer Accessories",
+        name: "د کمپیوټر اړوند سامان",
         id: 7,
         attributes: [
           {
             name: "Specifications",
-            placeholder: "Materials of body"
+            text: "ځانګړتیاوئ",
+            placeholder: "د جوړونې مواد"
           },
           {
             name: "Form Factor",
-            placeholder: "Enter main features here"
-          },
-          {
-            name: "Form Factor",
-            placeholder: "Placeholder..."
+            text: "بهرنۍ بڼه",
+            placeholder: "ظاهري بڼه یې څه ډول ده"
           },
           {
             name: "Ports and Connectivity",
-            placeholder: "TEnter type of ports"
+            text: "پورټونه",
+            placeholder: "څو او کوم پورټونه لري"
           },
           {
             name: "Graphics Performance",
-            placeholder: "Enter graphic details"
+            text: "ګرافیک",
+            placeholder: "څومره او څه ډول ګرافیک لري؟"
           },
 
         ]
       },
       {
-        name: "Tablets & Accessories",
+        name: "ټابلټ او اړوند سامان",
         id: 8,
         attributes: [
           {
             name: "Specifications",
-            placeholder: "Materials of body"
+            text: "ځانګړتیاوئ",
+            placeholder: "د جوړونې مواد"
           },
           {
             name: "Operating System",
-            placeholder: "Type of operating system"
+            text: "عامل سیستم",
+            placeholder: "کوم عامل سیستم لري"
           },
           {
-            name: "Display)",
-            placeholder: "Size of Display"
+            name: "Display",
+            text: "‌ډېسپلې",
+            placeholder: "د ډېسپلې بڼه"
           },
           {
             name: "Ports and Connectivity",
-            placeholder: "Enter type of ports"
-          },
-          {
-            name: "Bettery Life",
-            placeholder: "Enter bettery performance"
+            text: "پورټونه",
+            placeholder: "څو او کوم پورټونه لري"
           },
           {
             name: "Storage",
-            placeholder: "Enter size of storage"
+            text: "ذخیره",
+            placeholder: "څومره ذخیره لري"
+          },
+          {
+            name: "Bettery Life",
+            text: "بتري",
+            placeholder: "د بټري اړوند مالومات"
           },
         ]
       },
       {
-        name: "TVs",
+        name: "ټلویژون",
         id: 9,
         attributes: [
           {
             name: "Size",
-            placeholder: "Enter size of TV"
+            text: "سایز",
+            placeholder: "د ټلویژون سایز څومره دی"
           },
           {
             name: "Dispplay Resolution",
-            placeholder: "Enter resolution detials"
+            text: "رېزولوشن",
+            placeholder: "د ریزولوشن اړوند مالومات ولیکئ"
           },
           {
             name: "Display techonology",
-            placeholder: "Type of techonology"
+            text: "د ډیسپلې ټکنالوژي",
+            placeholder: "د ډیسپلې د ټکنالوژۍ ډول"
           },
           {
             name: "Smart Features",
-            placeholder: "Enter some small features"
+            text: "خاص ځانګړنې",
+            placeholder: "خاص ځانګړنې یې ولیکئ"
           },
           {
             name: "Connectivity",
-            placeholder: "Enter connectivity options "
+            text: "اتصال",
+            placeholder: "له څه شي سره وصل کېدای شي؟"
           },
           {
             name: "Sound Quality",
-            placeholder: "Describe the audio features"
+            text: "د غږ کیفیت",
+            placeholder: "د غږ ځانګړنې یې ولیکئ"
           },
           {
             name: "Inputs and Outputs",
-            placeholder: "Available input and output options"
+            text: "ورکړیز او راکړیز",
+            placeholder: "ورکړیز او راکړیز آپشنونه"
           },
           {
             name: "Condition",
-            placeholder: "Placeholder..."
+            text: "حالت",
+            placeholder: "لږ استعمالي دی که ډېر؟"
           },
           {
             name: "Usage Details",
-            placeholder: "Used for gaming or..."
+            text: "د ګټې اخیستنې مالومات",
+            placeholder: "د څه لپاره استعمالیږي"
           }
         ]
       },
       {
-        name: "Home Appliances",
+        name: "د کور سامان",
         id: 10,
         attributes: [
           {
             name: "Type of Appliance",
-            placeholder: "What type of home appliance it is"
+            text: "د سامان ډول",
+            placeholder: "برقي، ګازي..."
           },
           {
             name: "Size and Dimensions",
-            placeholder: "Measurements of the appliance"
+            text: "حجم او سایز",
+            placeholder: "اندازه او حجم یې ولیکئ"
           },
           {
             name: "Condition",
-            placeholder: "Enter condition of the appliance "
+            text: "حالت",
+            placeholder: "لږ استعمالي دی که ډېر؟"
           },
           {
             name: "Features",
-            placeholder: "Enter the key features and functions "
+            text: "ځانګړنې",
+            placeholder: "خاص ځانګړنې یې ولیکئ"
           },
           {
             name: "Color",
-            placeholder: "Enter color of the appliance"
+            text: "رنګ",
+            placeholder: "د رنګ ډول یې ولیکئ"
           },
           {
             name: "Usage Details",
-            placeholder: "Enter usage details"
+            text: "د ګټې اخیستنې مالومات",
+            placeholder: "د څه لپاره استعمالیږي"
           }
         ]
       },
 
       {
-        name: "Cameras, Camcorders & Accessories",
+        name: "کامرې او اړوند سامان",
         id: 11,
         attributes: [
           {
             name: "LCD Screen",
-            placeholder: "Size and type of the camera's LCD screen"
+            text: "ال سي ډي سکرین",
+            placeholder: "د ال سي ډي او سکرین سایز ولیکئ"
           },
           {
             name: "ISO Range",
-            placeholder: "Provide the camera's ISO sensitivity range"
+            text: "ISO Range",
+            placeholder: "د آیسو اړوند مالوت یې ولیکئ"
           },
           {
             name: "Shutter Speed",
-            placeholder: "Specify the shutter speed"
+            text: "د شوټر سرعت",
+            placeholder: "د شوټر سرعت یې ولیکئ"
           },
           {
             name: "Auto Focus System",
-            placeholder: "Detail the camera's autofocus system"
+            text: "اتومات فوکس",
+            placeholder: "د فوکس اړوند مالومات اضافه کړئ"
           },
           {
             name: "Video Recording",
-            placeholder: "Enter recording capabilities"
+            text: "ویډیو ریکارد",
+            placeholder: "د ریکارډ اړوند مالومات اضافه کړئ"
           },
           {
             name: "Image Stabilization",
-            placeholder: "Enter built-in image stabilization "
+            text: "انځور",
+            placeholder: "د انځور د اخستلو اړوند مالومات اضافه کړئ"
           },
           {
             name: "Connectivity",
-            placeholder: "Specify connectivity options "
+            text: "اتصال",
+            placeholder: "له څه شي سره وصل کېدای شي؟"
           },
           {
-            name: "Battery Life",
-            placeholder: "Mention the estimated battery life"
+            name: "Bettery Life",
+            text: "بتري",
+            placeholder: "د بټري اړوند مالومات"
           },
           {
             name: "Memory Card",
-            placeholder: "Detail the type of memory card"
+            text: "میموري کارډ",
+            placeholder: "د میموري کارد اړوند مالومات اضافه کړئ"
           },
           {
             name: "Included Accessories",
-            placeholder: "List any accessories that come with the camera"
+            text: "شامل سامان",
+            placeholder: "د کمرې سره شامل سامان اضافه کړئ"
           }
           ,
           {
             name: "Sensor Size",
-            placeholder: "Mention the size of the camera's image sensor"
+            text: "د سنسر سایز",
+            placeholder: "د اړوند سنسرونو مالومات اضافه کړئ"
           }
           ,
           {
             name: "Megapixels",
-            placeholder: ": Specify the camera's resolution"
+            text: "د کمرې سایز",
+            placeholder: "څو میګاپکسل کمره لري"
           }
           ,
           {
             name: "Lens Compatibility",
-            placeholder: "Describe the types of lenses that are compatible"
+            text: "لینزونه",
+            placeholder: "د اړوند لینزونو مالومات ولیکئ"
           }
         ]
       },
       {
-        name: "ACs & Home Electronics",
+        name: "اې سي او د کور برقي وسایل",
         id: 12,
         attributes: [
 
           {
             name: "Capacity/Size",
-            placeholder: "Provide relevant specifications"
+            text: "ظرفیت او سایز",
+            placeholder: "د سایز مالومات ولیکئ"
           },
-
           {
             name: "Features",
-            placeholder: "List the key features of the product"
+            text: "ځانګړنې",
+            placeholder: "خاص ځانګړنې یې ولیکئ"
           },
           {
             name: "Compatibility",
-            placeholder: "Specify compatibility with power sources"
+            text: "ورته والی",
+            placeholder: "د برقي سرچینو اړوند مالومات یې ولیکئ"
           },
           {
             name: "Included Accessories",
-            placeholder: "Mention any accessories or components "
+            text: "شامل سامان",
+            placeholder: "د اړوند شامل سامان نومونه اضافه کړئ"
           },
           {
             name: "Usage Details",
-            placeholder: "Write usage details"
+            text: "د ګټې اخیستنې مالومات",
+            placeholder: "د څه لپاره استعمالیږي"
           }
         ]
       },
       {
-        name: "Audio & Sound Systems",
+        name: "َغږیز سیستمونه",
         id: 13,
         attributes: [
 
           {
             name: "Frequency Interval",
-            placeholder: "Enter frequency interval"
+            text: "د فریکونسۍ انتروال",
+            placeholder: "د فریکونسۍ انتروال مالومات ولیکئ"
           }
         ]
       },
       {
-        name: "Video Game Consoles & Accessories",
+        name: "وېډیو ګیم او اړوند توکي",
         id: 14,
         attributes: [
     
           {
             name: "Storage",
-            placeholder: "Enter storage capacity"
+            text: "ذخیره",
+            placeholder: "څومره ذخیره لري؟"
           },
     
           {
             name: "Games",
-            placeholder: "List game types"
+            text: "ګیمونه",
+            placeholder: "د ګیمونو ډولونه ولیکئ"
           },
           {
             name: "Connectivity",
-            placeholder: "Specify connectivity with sources"
+            text: "اتصال",
+            placeholder: "له څه شي سره وصل کېدای شي؟"
           },
           {
             name: "Included Accessories",
-            placeholder: "Mention any accessories or components "
+            text: "شامل سامان",
+            placeholder: "د اړوند شامل سامان نومونه اضافه کړئ"
           },
           {
             name: "Controllers",
-            placeholder: "Write controller details"
+            text: "کنټرولر",
+            placeholder: "د کنټرولر اړوند مالومات ولیکئ"
           },
           {
             name: "Resolution",
-            placeholder: "Write resolution size"
+            text: "ریزولوشن",
+            placeholder: "د ریزولوشن اړوند مالومات ولیکئ"
           },
           {
             name: "Operating system compatibility",
-            placeholder: "Write compitible devices"
+            text: "د عامل سیتسم اتصال",
+            placeholder: "د کومو سیستونو سره اتصال کولای شي"
           },
           {
             name: "Speed",
-            placeholder: "Write speed details"
+            text: "سرعت",
+            placeholder: "د سرعت اړوند مالومات ولیکئ"
           }
     
     
@@ -2566,34 +2634,40 @@ const pashtoCategories = [
       },
     
       {
-        name: "Photocopiers",
+        name: "د فوټوکاپي اړوند شیان",
         id: 15,
         attributes: [
     
           {
             name: "Printing speed",
-            placeholder: "Enter printing speed details"
+            text: "د پرینت سرعت",
+            placeholder: "د پرینت د سرعت اړوند مالومات ولیکئ"
           },
     
           {
             name: "Paper handling capacity",
-            placeholder: "Enter handling speed"
+            text: "د کاغذ کشونې ظرفیت",
+            placeholder: "د کاغذ کشونې د ظرفیت مالومات ولیکئ"
           },
           {
             name: "Network Connectivity",
-            placeholder: "Specify Network Connectivity with sources"
+            text: "د شبکې اتصال",
+            placeholder: "د شبکو سره د اتصال مالومات ولیکئ"
           },
           {
             name: "Duplex printing",
-            placeholder: "Enter duplez print support details"
+            text: "دوه مخه چاپ",
+            placeholder: "دوه مخه چاپ ملاتړ لري"
           },
           {
             name: "Document scanning",
-            placeholder: "Enter scanning details"
+            text: "سکن",
+            placeholder: "د سکن کولو ملاتړ لري؟"
           },
           {
             name: "Resolution",
-            placeholder: "Write resolution size"
+            text: "ریزولوشن",
+            placeholder: "د ریزولوشن اړوند مالومات اضافه کړئ"
           }
         ]
       },
@@ -2603,569 +2677,685 @@ const pashtoCategories = [
     name: "موتري",
     subcategories: [
       {
-        name: "Cars",
+        name: "کوچنی موټر",
         id: 16,
         attributes: [
           {
             name: "Year",
-            placeholder: "Year the car was manufactured"
+            text: "کال",
+            placeholder: "د جوړیدو کال"
           },
 
           {
             name: "Mileage",
-            placeholder: "Indicate the current mileage "
+            text: "مصرف تیل",
+            placeholder: "په یو میل واټن کې د تیلو مصرف"
           },
           {
             name: "Exterior Color",
-            placeholder: "Mention the color of the car's"
+            text: "بیرونی رنګ",
+            placeholder: "بیرونی رنګ یې څه ډول دی"
           },
           {
             name: "Interior features",
-            placeholder: "Describe the interior features"
+            text: "داخلي رنګ",
+            placeholder: "داخل یې کوم رنګ لري"
           },
           {
             name: "Engine and Transmission",
-            placeholder: "Provide information about the engine "
+            text: "ماشین",
+            placeholder: "د ماشین اړوند یې مالومات ولیکئ"
           },
           {
             name: "Fuel Type",
-            placeholder: "Specify the type of fuel"
+            text: "د تیلو ډول",
+            placeholder: "ډیزل، پطرول، برېښنایي یا ګاز"
           },
           {
             name: "Drive Type",
-            placeholder: "Specify the type of drive"
+            text: "لاس",
+            placeholder: "چپه لاس دی که راسته"
           },
           {
             name: "Vehical History",
-            placeholder: "Highlight any relevant vehicle history"
+            text: "تاریخچه",
+            placeholder: "د تاریخچې اړوند مالومات ولیکئ"
           },
           {
             name: "Features",
-            placeholder: "List important features"
+            text: "ځانګړتیاوې",
+            placeholder: "مهمې ځانګړتیاوې اضافه کړئ"
           },
           {
             name: "Tires and Wheels",
-            placeholder: "Describe the condition of tires"
+            text: "ټایر او ویلز",
+            placeholder: "ډ ټایر او ویل مالومات اضافه کړئ"
           },
           {
             name: "Test Dirve & Inspection",
-            placeholder: "Details about arranging a test drive "
+            text: "ټرایي ورکول",
+            placeholder: "ټرایی اړوند وخت ولیکئ"
           },
           {
             name: "Ownership Documentation",
-            placeholder: "Mention the availability of title, registration"
+            text: "اسناد",
+            placeholder: "د اسنادو اړوند مالومات ولیکئ"
           }
 
         ]
       },
       {
-        name: "Motorbike",
+        name: "موټر سیکل",
         id: 17,
         attributes: [
           {
             name: "Year",
-            placeholder: "Year the car was manufactured"
+            text: "کال",
+            placeholder: "د جوړیدو کال"
           },
 
           {
             name: "Mileage",
-            placeholder: "Indicate the current mileage "
+            text: "مصرف تیل",
+            placeholder: "په یو میل واټن کې د تیلو مصرف"
           },
           {
             name: "Exterior Color",
-            placeholder: "Mention the color of the car's"
+            text: "بیرونی رنګ",
+            placeholder: "بیرونی رنګ یې څه ډول دی"
           },
           {
             name: "Interior features",
-            placeholder: "Describe the interior features"
+            text: "داخلي رنګ",
+            placeholder: "داخل یې کوم رنګ لري"
           },
           {
             name: "Engine and Transmission",
-            placeholder: "Provide information about the engine "
+            text: "ماشین",
+            placeholder: "د ماشین اړوند یې مالومات ولیکئ"
           },
           {
             name: "Fuel Type",
-            placeholder: "Specify the type of fuel"
+            text: "د تیلو ډول",
+            placeholder: "ډیزل، پطرول، برېښنایي یا ګاز"
           },
           {
             name: "Drive Type",
-            placeholder: "Specify the type of drive"
+            text: "لاس",
+            placeholder: "چپه لاس دی که راسته"
           },
           {
             name: "Vehical History",
-            placeholder: "Highlight any relevant vehicle history"
+            text: "تاریخچه",
+            placeholder: "د تاریخچې اړوند مالومات ولیکئ"
           },
           {
             name: "Features",
-            placeholder: "List important features"
+            text: "ځانګړتیاوې",
+            placeholder: "مهمې ځانګړتیاوې اضافه کړئ"
           },
           {
             name: "Tires and Wheels",
-            placeholder: "Describe the condition of tires"
+            text: "ټایر او ویلز",
+            placeholder: "ډ ټایر او ویل مالومات اضافه کړئ"
           },
           {
             name: "Test Dirve & Inspection",
-            placeholder: "Details about arranging a test drive "
+            text: "ټرایي ورکول",
+            placeholder: "ټرایی اړوند وخت ولیکئ"
           },
           {
             name: "Ownership Documentation",
-            placeholder: "Mention the availability of title, registration"
+            text: "اسناد",
+            placeholder: "د اسنادو اړوند مالومات ولیکئ"
           }
-
         ]
       },
       {
-        name: "Three Wheelers",
+        name: "زرنج، ریکشا",
         id: 18,
         attributes: [
           {
             name: "Year",
-            placeholder: "Year the car was manufactured"
+            text: "کال",
+            placeholder: "د جوړیدو کال"
           },
 
           {
             name: "Mileage",
-            placeholder: "Indicate the current mileage "
+            text: "مصرف تیل",
+            placeholder: "په یو میل واټن کې د تیلو مصرف"
           },
           {
             name: "Exterior Color",
-            placeholder: "Mention the color of the car's"
+            text: "بیرونی رنګ",
+            placeholder: "بیرونی رنګ یې څه ډول دی"
           },
           {
             name: "Interior features",
-            placeholder: "Describe the interior features"
+            text: "داخلي رنګ",
+            placeholder: "داخل یې کوم رنګ لري"
           },
           {
             name: "Engine and Transmission",
-            placeholder: "Provide information about the engine "
+            text: "ماشین",
+            placeholder: "د ماشین اړوند یې مالومات ولیکئ"
           },
           {
             name: "Fuel Type",
-            placeholder: "Specify the type of fuel"
+            text: "د تیلو ډول",
+            placeholder: "ډیزل، پطرول، برېښنایي یا ګاز"
           },
           {
             name: "Drive Type",
-            placeholder: "Specify the type of drive"
+            text: "لاس",
+            placeholder: "چپه لاس دی که راسته"
           },
           {
             name: "Vehical History",
-            placeholder: "Highlight any relevant vehicle history"
+            text: "تاریخچه",
+            placeholder: "د تاریخچې اړوند مالومات ولیکئ"
           },
           {
             name: "Features",
-            placeholder: "List important features"
+            text: "ځانګړتیاوې",
+            placeholder: "مهمې ځانګړتیاوې اضافه کړئ"
           },
           {
             name: "Tires and Wheels",
-            placeholder: "Describe the condition of tires"
+            text: "ټایر او ویلز",
+            placeholder: "ډ ټایر او ویل مالومات اضافه کړئ"
           },
           {
             name: "Test Dirve & Inspection",
-            placeholder: "Details about arranging a test drive "
+            text: "ټرایي ورکول",
+            placeholder: "ټرایی اړوند وخت ولیکئ"
           },
           {
             name: "Ownership Documentation",
-            placeholder: "Mention the availability of title, registration"
+            text: "اسناد",
+            placeholder: "د اسنادو اړوند مالومات ولیکئ"
           }
-
         ]
       },
       {
-        name: "Vans",
+        name: "منځني موټر",
         id: 19,
         attributes: [
           {
             name: "Year",
-            placeholder: "Year the car was manufactured"
+            text: "کال",
+            placeholder: "د جوړیدو کال"
           },
 
           {
             name: "Mileage",
-            placeholder: "Indicate the current mileage "
+            text: "مصرف تیل",
+            placeholder: "په یو میل واټن کې د تیلو مصرف"
           },
           {
             name: "Exterior Color",
-            placeholder: "Mention the color of the car's"
+            text: "بیرونی رنګ",
+            placeholder: "بیرونی رنګ یې څه ډول دی"
           },
           {
             name: "Interior features",
-            placeholder: "Describe the interior features"
+            text: "داخلي رنګ",
+            placeholder: "داخل یې کوم رنګ لري"
           },
           {
             name: "Engine and Transmission",
-            placeholder: "Provide information about the engine "
+            text: "ماشین",
+            placeholder: "د ماشین اړوند یې مالومات ولیکئ"
           },
           {
             name: "Fuel Type",
-            placeholder: "Specify the type of fuel"
+            text: "د تیلو ډول",
+            placeholder: "ډیزل، پطرول، برېښنایي یا ګاز"
           },
           {
             name: "Drive Type",
-            placeholder: "Specify the type of drive"
+            text: "لاس",
+            placeholder: "چپه لاس دی که راسته"
           },
           {
             name: "Vehical History",
-            placeholder: "Highlight any relevant vehicle history"
+            text: "تاریخچه",
+            placeholder: "د تاریخچې اړوند مالومات ولیکئ"
           },
           {
             name: "Features",
-            placeholder: "List important features"
+            text: "ځانګړتیاوې",
+            placeholder: "مهمې ځانګړتیاوې اضافه کړئ"
           },
           {
             name: "Tires and Wheels",
-            placeholder: "Describe the condition of tires"
+            text: "ټایر او ویلز",
+            placeholder: "ډ ټایر او ویل مالومات اضافه کړئ"
           },
           {
             name: "Test Dirve & Inspection",
-            placeholder: "Details about arranging a test drive "
+            text: "ټرایي ورکول",
+            placeholder: "ټرایی اړوند وخت ولیکئ"
           },
           {
             name: "Ownership Documentation",
-            placeholder: "Mention the availability of title, registration"
+            text: "اسناد",
+            placeholder: "د اسنادو اړوند مالومات ولیکئ"
           }
 
         ]
       },
       {
-        name: "Trucks",
+        name: "ټرک",
         id: 20,
         attributes: [
           {
             name: "Year",
-            placeholder: "Year the car was manufactured"
+            text: "کال",
+            placeholder: "د جوړیدو کال"
           },
 
           {
             name: "Mileage",
-            placeholder: "Indicate the current mileage "
+            text: "مصرف تیل",
+            placeholder: "په یو میل واټن کې د تیلو مصرف"
           },
           {
             name: "Exterior Color",
-            placeholder: "Mention the color of the car's"
+            text: "بیرونی رنګ",
+            placeholder: "بیرونی رنګ یې څه ډول دی"
           },
           {
             name: "Interior features",
-            placeholder: "Describe the interior features"
+            text: "داخلي رنګ",
+            placeholder: "داخل یې کوم رنګ لري"
           },
           {
             name: "Engine and Transmission",
-            placeholder: "Provide information about the engine "
+            text: "ماشین",
+            placeholder: "د ماشین اړوند یې مالومات ولیکئ"
           },
           {
             name: "Fuel Type",
-            placeholder: "Specify the type of fuel"
+            text: "د تیلو ډول",
+            placeholder: "ډیزل، پطرول، برېښنایي یا ګاز"
           },
           {
             name: "Drive Type",
-            placeholder: "Specify the type of drive"
+            text: "لاس",
+            placeholder: "چپه لاس دی که راسته"
           },
           {
             name: "Vehical History",
-            placeholder: "Highlight any relevant vehicle history"
+            text: "تاریخچه",
+            placeholder: "د تاریخچې اړوند مالومات ولیکئ"
           },
           {
             name: "Features",
-            placeholder: "List important features"
+            text: "ځانګړتیاوې",
+            placeholder: "مهمې ځانګړتیاوې اضافه کړئ"
           },
           {
             name: "Tires and Wheels",
-            placeholder: "Describe the condition of tires"
+            text: "ټایر او ویلز",
+            placeholder: "ډ ټایر او ویل مالومات اضافه کړئ"
           },
           {
             name: "Test Dirve & Inspection",
-            placeholder: "Details about arranging a test drive "
+            text: "ټرایي ورکول",
+            placeholder: "ټرایی اړوند وخت ولیکئ"
           },
           {
             name: "Ownership Documentation",
-            placeholder: "Mention the availability of title, registration"
+            text: "اسناد",
+            placeholder: "د اسنادو اړوند مالومات ولیکئ"
           }
 
         ]
       },
       {
-        name: "Buses",
+        name: "بس",
         id: 21,
         attributes: [
           {
             name: "Year",
-            placeholder: "Year the car was manufactured"
+            text: "کال",
+            placeholder: "د جوړیدو کال"
           },
 
           {
             name: "Mileage",
-            placeholder: "Indicate the current mileage "
+            text: "مصرف تیل",
+            placeholder: "په یو میل واټن کې د تیلو مصرف"
           },
           {
             name: "Exterior Color",
-            placeholder: "Mention the color of the car's"
+            text: "بیرونی رنګ",
+            placeholder: "بیرونی رنګ یې څه ډول دی"
           },
           {
             name: "Interior features",
-            placeholder: "Describe the interior features"
+            text: "داخلي رنګ",
+            placeholder: "داخل یې کوم رنګ لري"
           },
           {
             name: "Engine and Transmission",
-            placeholder: "Provide information about the engine "
+            text: "ماشین",
+            placeholder: "د ماشین اړوند یې مالومات ولیکئ"
           },
           {
             name: "Fuel Type",
-            placeholder: "Specify the type of fuel"
+            text: "د تیلو ډول",
+            placeholder: "ډیزل، پطرول، برېښنایي یا ګاز"
           },
           {
             name: "Drive Type",
-            placeholder: "Specify the type of drive"
+            text: "لاس",
+            placeholder: "چپه لاس دی که راسته"
           },
           {
             name: "Vehical History",
-            placeholder: "Highlight any relevant vehicle history"
+            text: "تاریخچه",
+            placeholder: "د تاریخچې اړوند مالومات ولیکئ"
           },
           {
             name: "Features",
-            placeholder: "List important features"
+            text: "ځانګړتیاوې",
+            placeholder: "مهمې ځانګړتیاوې اضافه کړئ"
           },
           {
             name: "Tires and Wheels",
-            placeholder: "Describe the condition of tires"
+            text: "ټایر او ویلز",
+            placeholder: "ډ ټایر او ویل مالومات اضافه کړئ"
           },
           {
             name: "Test Dirve & Inspection",
-            placeholder: "Details about arranging a test drive "
+            text: "ټرایي ورکول",
+            placeholder: "ټرایی اړوند وخت ولیکئ"
           },
           {
             name: "Ownership Documentation",
-            placeholder: "Mention the availability of title, registration"
+            text: "اسناد",
+            placeholder: "د اسنادو اړوند مالومات ولیکئ"
           },
           {
             name: "Number of Passengers",
-            placeholder: "Indicate number of passengers"
+            text: "د څوکیو شمېر",
+            placeholder: "د څوکیو شمیر څومره دی؟"
           },
 
         ]
       },
       {
-        name: "Heavy Duty",
+        name: "لوی بار وړونکي موټر",
         id: 22,
         attributes: [
           {
             name: "Year",
-            placeholder: "Year the car was manufactured"
+            text: "کال",
+            placeholder: "د جوړیدو کال"
           },
 
           {
             name: "Mileage",
-            placeholder: "Indicate the current mileage "
+            text: "مصرف تیل",
+            placeholder: "په یو میل واټن کې د تیلو مصرف"
           },
           {
             name: "Exterior Color",
-            placeholder: "Mention the color of the car's"
+            text: "بیرونی رنګ",
+            placeholder: "بیرونی رنګ یې څه ډول دی"
           },
           {
             name: "Interior features",
-            placeholder: "Describe the interior features"
+            text: "داخلي رنګ",
+            placeholder: "داخل یې کوم رنګ لري"
           },
           {
             name: "Engine and Transmission",
-            placeholder: "Provide information about the engine "
+            text: "ماشین",
+            placeholder: "د ماشین اړوند یې مالومات ولیکئ"
           },
           {
             name: "Fuel Type",
-            placeholder: "Specify the type of fuel"
+            text: "د تیلو ډول",
+            placeholder: "ډیزل، پطرول، برېښنایي یا ګاز"
           },
           {
             name: "Drive Type",
-            placeholder: "Specify the type of drive"
+            text: "لاس",
+            placeholder: "چپه لاس دی که راسته"
           },
           {
             name: "Vehical History",
-            placeholder: "Highlight any relevant vehicle history"
+            text: "تاریخچه",
+            placeholder: "د تاریخچې اړوند مالومات ولیکئ"
           },
           {
             name: "Features",
-            placeholder: "List important features"
+            text: "ځانګړتیاوې",
+            placeholder: "مهمې ځانګړتیاوې اضافه کړئ"
           },
           {
             name: "Tires and Wheels",
-            placeholder: "Describe the condition of tires"
+            text: "ټایر او ویلز",
+            placeholder: "ډ ټایر او ویل مالومات اضافه کړئ"
           },
           {
             name: "Test Dirve & Inspection",
-            placeholder: "Details about arranging a test drive "
+            text: "ټرایي ورکول",
+            placeholder: "ټرایی اړوند وخت ولیکئ"
           },
           {
             name: "Ownership Documentation",
-            placeholder: "Mention the availability of title, registration"
+            text: "اسناد",
+            placeholder: "د اسنادو اړوند مالومات ولیکئ"
           },
           {
             name: "Load Capacity",
-            placeholder: "Indicate load capacity"
+            text: "د بار وړلو ظرفیت",
+            placeholder: "څو ټڼه بار انتقالولای شي"
           },
 
         ]
       },
       {
-        name: "Water Transport",
+        name: "د اوبو د انتقال موټر",
         id: 23,
         attributes: [
           {
             name: "Year",
-            placeholder: "Year the car was manufactured"
+            text: "کال",
+            placeholder: "د جوړیدو کال"
           },
 
           {
             name: "Mileage",
-            placeholder: "Indicate the current mileage "
+            text: "مصرف تیل",
+            placeholder: "په یو میل واټن کې د تیلو مصرف"
           },
           {
             name: "Exterior Color",
-            placeholder: "Mention the color of the car's"
+            text: "بیرونی رنګ",
+            placeholder: "بیرونی رنګ یې څه ډول دی"
           },
           {
             name: "Interior features",
-            placeholder: "Describe the interior features"
+            text: "داخلي رنګ",
+            placeholder: "داخل یې کوم رنګ لري"
           },
           {
             name: "Engine and Transmission",
-            placeholder: "Provide information about the engine "
+            text: "ماشین",
+            placeholder: "د ماشین اړوند یې مالومات ولیکئ"
           },
           {
             name: "Fuel Type",
-            placeholder: "Specify the type of fuel"
+            text: "د تیلو ډول",
+            placeholder: "ډیزل، پطرول، برېښنایي یا ګاز"
           },
           {
             name: "Drive Type",
-            placeholder: "Specify the type of drive"
+            text: "لاس",
+            placeholder: "چپه لاس دی که راسته"
           },
           {
             name: "Vehical History",
-            placeholder: "Highlight any relevant vehicle history"
+            text: "تاریخچه",
+            placeholder: "د تاریخچې اړوند مالومات ولیکئ"
           },
           {
             name: "Features",
-            placeholder: "List important features"
+            text: "ځانګړتیاوې",
+            placeholder: "مهمې ځانګړتیاوې اضافه کړئ"
           },
           {
             name: "Tires and Wheels",
-            placeholder: "Describe the condition of tires"
+            text: "ټایر او ویلز",
+            placeholder: "ډ ټایر او ویل مالومات اضافه کړئ"
           },
           {
             name: "Test Dirve & Inspection",
-            placeholder: "Details about arranging a test drive "
+            text: "ټرایي ورکول",
+            placeholder: "ټرایی اړوند وخت ولیکئ"
           },
           {
             name: "Ownership Documentation",
-            placeholder: "Mention the availability of title, registration"
+            text: "اسناد",
+            placeholder: "د اسنادو اړوند مالومات ولیکئ"
           },
           {
-            name: "load capacity",
-            placeholder: "Indicate load capacity"
+            name: "Load Capacity",
+            text: "د بار وړلو ظرفیت",
+            placeholder: "څو ټڼه بار انتقالولای شي"
           },
 
         ]
       },
       {
-        name: "Bicycles",
+        name: "بایسکل",
         id: 24,
         attributes: [
           {
             name: "Year",
-            placeholder: "Year that was manufactured"
+            text: "کال",
+            placeholder: "د جوړیدو کال"
           },
 
           {
             name: "Exterior Color",
-            placeholder: "Mention the color of the car's"
+            text: "بیرونی رنګ",
+            placeholder: "بیرونی رنګ یې څه ډول دی"
           },
-
           {
             name: "Vehical History",
-            placeholder: "Highlight any relevant vehicle history"
+            text: "تاریخچه",
+            placeholder: "د تاریخچې اړوند مالومات ولیکئ"
           },
-
           {
-            name: "Tires and Wheels",
-            placeholder: "Describe the condition of tires"
+            name: "Features",
+            text: "ځانګړتیاوې",
+            placeholder: "مهمې ځانګړتیاوې اضافه کړئ"
           },
 
           {
             name: "Ownership Documentation",
-            placeholder: "Mention the availability of title, registration"
-          }
+            text: "اسناد",
+            placeholder: "د اسنادو اړوند مالومات ولیکئ"
+          },
 
         ]
       },
       {
-        name: "Auto Parts & Accessories",
+        name: "د موټر اړوند سامان",
         id: 25,
         attributes: [
           {
             name: "Car Type",
-            placeholder: "Enter the car type"
+            text: "د موټر ډول",
+            placeholder: "د موټر ډول ولیکئ"
           },
 
           {
             name: "Part Name",
-            placeholder: "Enter Part Name"
+            text: "د پرزې نوم",
+            placeholder: "د پرزې نوم ولیکئ"
           },
         ]
       },
       {
-        name: "Rental",
+        name: "کرايي",
         id: 26,
         attributes: [
           {
             name: "Year",
-            placeholder: "Year that was manufactured"
+            text: "کال",
+            placeholder: "د جوړیدو کال"
           },
 
           {
             name: "Mileage",
-            placeholder: "Indicate the current mileage "
+            text: "مصرف تیل",
+            placeholder: "په یو میل واټن کې د تیلو مصرف"
           },
           {
             name: "Exterior Color",
-            placeholder: "Mention the color of the car's"
+            text: "بیرونی رنګ",
+            placeholder: "بیرونی رنګ یې څه ډول دی"
           },
           {
             name: "Interior features",
-            placeholder: "Describe the interior features"
+            text: "داخلي رنګ",
+            placeholder: "داخل یې کوم رنګ لري"
           },
           {
             name: "Engine and Transmission",
-            placeholder: "Provide information about the engine "
+            text: "ماشین",
+            placeholder: "د ماشین اړوند یې مالومات ولیکئ"
           },
           {
             name: "Fuel Type",
-            placeholder: "Specify the type of fuel"
+            text: "د تیلو ډول",
+            placeholder: "ډیزل، پطرول، برېښنایي یا ګاز"
           },
           {
             name: "Drive Type",
-            placeholder: "Specify the type of drive"
+            text: "لاس",
+            placeholder: "چپه لاس دی که راسته"
           },
           {
             name: "Vehical History",
-            placeholder: "Highlight any relevant vehicle history"
+            text: "تاریخچه",
+            placeholder: "د تاریخچې اړوند مالومات ولیکئ"
           },
           {
             name: "Features",
-            placeholder: "List important features"
+            text: "ځانګړتیاوې",
+            placeholder: "مهمې ځانګړتیاوې اضافه کړئ"
           },
           {
             name: "Tires and Wheels",
-            placeholder: "Describe the condition of tires"
+            text: "ټایر او ویلز",
+            placeholder: "ډ ټایر او ویل مالومات اضافه کړئ"
           },
-
+          {
+            name: "Test Dirve & Inspection",
+            text: "ټرایي ورکول",
+            placeholder: "ټرایی اړوند وخت ولیکئ"
+          },
           {
             name: "Ownership Documentation",
-            placeholder: "Mention the availability of title, registration"
-          }
-
+            text: "اسناد",
+            placeholder: "د اسنادو اړوند مالومات ولیکئ"
+          },
         ]
       },
     ],
   },
 
   {
-    name: "جایدادونه",
+    name: "ځمکې او ځایدادونه",
     subcategories: [
       {
         name: "Land For Sale",
@@ -3173,87 +3363,102 @@ const pashtoCategories = [
         attributes: [
           {
             name: "Type of property",
-            placeholder: "Describe property type"
+            text: "د ځایداد ډول",
+            placeholder: "د ځایداد ډول ولیکئ"
           },
           {
             name: "Location",
-            placeholder: "Describe the Location"
+            text: "موقعیت",
+            placeholder: " د موقعیت اړوند مالومات ولیکئ"
           },
           {
             name: "Size",
-            placeholder: "Describe the width and hieght"
+            text: "اندازه",
+            placeholder: "د مساحت اړوند مالومات ولیکئ"
           },
         ]
       },
       {
-        name: "Apartaments For Sale",
+        name: "اپارتمانونه",
         id: 28,
         attributes: [
           {
             name: "Type of property",
-            placeholder: "Describe property type"
+            text: "د ځایداد ډول",
+            placeholder: "د ځایداد ډول ولیکئ"
           },
           {
             name: "Location",
-            placeholder: "Describe the Location"
+            text: "موقعیت",
+            placeholder: " د موقعیت اړوند مالومات ولیکئ"
           },
           {
             name: "Size",
-            placeholder: "Describe the width and hieght"
+            text: "اندازه",
+            placeholder: "د مساحت اړوند مالومات ولیکئ"
           },
         ]
       },
       {
-        name: "Houses For Sale",
+        name: "کورونه",
         id: 29,
         attributes: [
           {
             name: "Type of property",
-            placeholder: "Describe property type"
+            text: "د ځایداد ډول",
+            placeholder: "د ځایداد ډول ولیکئ"
           },
           {
             name: "Location",
-            placeholder: "Describe the Location"
+            text: "موقعیت",
+            placeholder: " د موقعیت اړوند مالومات ولیکئ"
           },
           {
             name: "Size",
-            placeholder: "Describe the width and hieght"
+            text: "اندازه",
+            placeholder: "د مساحت اړوند مالومات ولیکئ"
           },
         ]
       },
       {
-        name: "Commercial Properties For Sale",
+        name: "تجارتي ځایونه",
         id: 30,
         attributes: [
           {
             name: "Type of property",
-            placeholder: "Describe property type"
+            text: "د ځایداد ډول",
+            placeholder: "د ځایداد ډول ولیکئ"
           },
           {
             name: "Location",
-            placeholder: "Describe the Location"
+            text: "موقعیت",
+            placeholder: " د موقعیت اړوند مالومات ولیکئ"
           },
           {
             name: "Size",
-            placeholder: "Describe the width and hieght"
+            text: "اندازه",
+            placeholder: "د مساحت اړوند مالومات ولیکئ"
           },
         ]
       },
       {
-        name: "New Projects",
+        name: "نوې پروژې",
         id: 31,
         attributes: [
           {
             name: "Type of property",
-            placeholder: "Describe property type"
+            text: "د ځایداد ډول",
+            placeholder: "د ځایداد ډول ولیکئ"
           },
           {
             name: "Location",
-            placeholder: "Describe the Location"
+            text: "موقعیت",
+            placeholder: " د موقعیت اړوند مالومات ولیکئ"
           },
           {
             name: "Size",
-            placeholder: "Describe the width and hieght"
+            text: "اندازه",
+            placeholder: "د مساحت اړوند مالومات ولیکئ"
           },
         ]
       },
@@ -3262,682 +3467,823 @@ const pashtoCategories = [
   {
     name: "د کور وسایل",
     subcategories: [{
-      name: "Living Room Furniture",
+      name: "کوچ، مېز او نور توکي",
       id: 32,
-      attributes: [{
+      attributes: [
+      {
         name: "Style",
-        placeholder: "Describe the style of the furniture"
+        text: "سټایل",
+        placeholder: "د سټایل اړوند مالومات ولیکئ"
       },
       {
         name: "Dimensions",
-        placeholder: "Provide the dimensions of the furniture"
+        text: "حجم",
+        placeholder: "د حجم اړوند مالومات ولیکئ"
       },
       {
         name: "Materials Used",
-        placeholder: "Describe the materials used in the furniture"
+        text: "موادو",
+        placeholder: "د جوړښت مواد یې څه دي؟"
       },
       {
         name: "Sizes",
-        placeholder: "Specify the available sizes"
+        text: "اندازه",
+        placeholder: "اړوند سایز یې څومره دی"
       },
       {
         name: "Purpose",
-        placeholder: "Describe the intended purpose of the furniture"
+        text: "هدف",
+        placeholder: "د څه لپاره پکاریږي"
       }
       ]
     },
     {
-      name: "Kitchen & Dining Furniture",
+      name: "د آشپزخانې وسایل",
       id: 33,
-      attributes: [{
-        name: "Style",
-        placeholder: "Describe the style of the furniture"
-      },
-      {
-        name: "Dimensions",
-        placeholder: "Provide the dimensions of the furniture"
-      },
-      {
-        name: "Materials Used",
-        placeholder: "Describe the materials used in the furniture"
-      },
-      {
-        name: "Sizes",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Purpose",
-        placeholder: "Describe the intended purpose of the furniture"
-      }
+      attributes: [
+        {
+          name: "Style",
+          text: "سټایل",
+          placeholder: "د سټایل اړوند مالومات ولیکئ"
+        },
+        {
+          name: "Dimensions",
+          text: "حجم",
+          placeholder: "د حجم اړوند مالومات ولیکئ"
+        },
+        {
+          name: "Materials Used",
+          text: "موادو",
+          placeholder: "د جوړښت مواد یې څه دي؟"
+        },
+        {
+          name: "Sizes",
+          text: "اندازه",
+          placeholder: "اړوند سایز یې څومره دی"
+        },
+        {
+          name: "Purpose",
+          text: "هدف",
+          placeholder: "د څه لپاره پکاریږي"
+        }
       ]
     },
     {
-      name: "Bedroom Furniture",
+      name: "د خوب د اتاق وسایل",
       id: 34,
-      attributes: [{
-        name: "Style",
-        placeholder: "Describe the style of the furniture"
-      },
-      {
-        name: "Dimensions",
-        placeholder: "Provide the dimensions of the furniture"
-      },
-      {
-        name: "Materials Used",
-        placeholder: "Describe the materials used in the furniture"
-      },
-      {
-        name: "Sizes",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Purpose",
-        placeholder: "Describe the intended purpose of the furniture"
-      }
+      attributes: [
+        {
+          name: "Style",
+          text: "سټایل",
+          placeholder: "د سټایل اړوند مالومات ولیکئ"
+        },
+        {
+          name: "Dimensions",
+          text: "حجم",
+          placeholder: "د حجم اړوند مالومات ولیکئ"
+        },
+        {
+          name: "Materials Used",
+          text: "موادو",
+          placeholder: "د جوړښت مواد یې څه دي؟"
+        },
+        {
+          name: "Sizes",
+          text: "اندازه",
+          placeholder: "اړوند سایز یې څومره دی"
+        },
+        {
+          name: "Purpose",
+          text: "هدف",
+          placeholder: "د څه لپاره پکاریږي"
+        }
       ]
     },
     {
-      name: "Office & Shop Furniture",
+      name: "د دکان او دفتر وسایل",
       id: 35,
-      attributes: [{
-        name: "Style",
-        placeholder: "Describe the style of the furniture"
-      },
-      {
-        name: "Dimensions",
-        placeholder: "Provide the dimensions of the furniture"
-      },
-      {
-        name: "Materials Used",
-        placeholder: "Describe the materials used in the furniture"
-      },
-      {
-        name: "Sizes",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Purpose",
-        placeholder: "Describe the intended purpose of the furniture"
-      }
+      attributes: [
+        {
+          name: "Style",
+          text: "سټایل",
+          placeholder: "د سټایل اړوند مالومات ولیکئ"
+        },
+        {
+          name: "Dimensions",
+          text: "حجم",
+          placeholder: "د حجم اړوند مالومات ولیکئ"
+        },
+        {
+          name: "Materials Used",
+          text: "موادو",
+          placeholder: "د جوړښت مواد یې څه دي؟"
+        },
+        {
+          name: "Sizes",
+          text: "اندازه",
+          placeholder: "اړوند سایز یې څومره دی"
+        },
+        {
+          name: "Purpose",
+          text: "هدف",
+          placeholder: "د څه لپاره پکاریږي"
+        }
       ]
     },
     {
-      name: "Children's Furniture",
+      name: "د ماشومانو سامان",
       id: 36,
-      attributes: [{
-        name: "Style",
-        placeholder: "Describe the style of the furniture"
-      },
-      {
-        name: "Dimensions",
-        placeholder: "Provide the dimensions of the furniture"
-      },
-      {
-        name: "Materials Used",
-        placeholder: "Describe the materials used in the furniture"
-      },
-      {
-        name: "Sizes",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Purpose",
-        placeholder: "Describe the intended purpose of the furniture"
-      }
+      attributes: [
+        {
+          name: "Style",
+          text: "سټایل",
+          placeholder: "د سټایل اړوند مالومات ولیکئ"
+        },
+        {
+          name: "Dimensions",
+          text: "حجم",
+          placeholder: "د حجم اړوند مالومات ولیکئ"
+        },
+        {
+          name: "Materials Used",
+          text: "موادو",
+          placeholder: "د جوړښت مواد یې څه دي؟"
+        },
+        {
+          name: "Sizes",
+          text: "اندازه",
+          placeholder: "اړوند سایز یې څومره دی"
+        },
+        {
+          name: "Purpose",
+          text: "هدف",
+          placeholder: "د څه لپاره پکاریږي"
+        }
       ]
     },
     {
-      name: "Household Items",
+      name: "د کور سامان",
       id: 37,
-      attributes: [{
-        name: "Style",
-        placeholder: "Describe the style of the item"
-      },
-      {
-        name: "Dimensions",
-        placeholder: "Provide the dimensions of the item"
-      },
-      {
-        name: "Materials Used",
-        placeholder: "Describe the materials used in the item"
-      },
-      {
-        name: "Sizes",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Purpose",
-        placeholder: "Describe the intended purpose of the item"
-      }
+      attributes: [
+        {
+          name: "Style",
+          text: "سټایل",
+          placeholder: "د سټایل اړوند مالومات ولیکئ"
+        },
+        {
+          name: "Dimensions",
+          text: "حجم",
+          placeholder: "د حجم اړوند مالومات ولیکئ"
+        },
+        {
+          name: "Materials Used",
+          text: "موادو",
+          placeholder: "د جوړښت مواد یې څه دي؟"
+        },
+        {
+          name: "Sizes",
+          text: "اندازه",
+          placeholder: "اړوند سایز یې څومره دی"
+        },
+        {
+          name: "Purpose",
+          text: "هدف",
+          placeholder: "د څه لپاره پکاریږي"
+        }
       ]
     },
     {
-      name: "Bathroom Products",
+      name: "د حمام سامان",
       id: 38,
-      attributes: [{
-        name: "Style",
-        placeholder: "Describe the style of the product"
-      },
-      {
-        name: "Dimensions",
-        placeholder: "Provide the dimensions of the product"
-      },
-      {
-        name: "Materials Used",
-        placeholder: "Describe the materials used in the product"
-      },
-      {
-        name: "Sizes",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Purpose",
-        placeholder: "Describe the intended purpose of the product"
-      }
+      attributes: [
+        {
+          name: "Style",
+          text: "سټایل",
+          placeholder: "د سټایل اړوند مالومات ولیکئ"
+        },
+        {
+          name: "Dimensions",
+          text: "حجم",
+          placeholder: "د حجم اړوند مالومات ولیکئ"
+        },
+        {
+          name: "Materials Used",
+          text: "موادو",
+          placeholder: "د جوړښت مواد یې څه دي؟"
+        },
+        {
+          name: "Sizes",
+          text: "اندازه",
+          placeholder: "اړوند سایز یې څومره دی"
+        },
+        {
+          name: "Purpose",
+          text: "هدف",
+          placeholder: "د څه لپاره پکاریږي"
+        }
       ]
     },
     {
-      name: "Doors",
+      name: "ور",
       id: 39,
-      attributes: [{
-        name: "Style",
-        placeholder: "Describe the style of the door"
-      },
-      {
-        name: "Dimensions",
-        placeholder: "Provide the dimensions of the door"
-      },
-      {
-        name: "Materials Used",
-        placeholder: "Describe the materials used in the door"
-      },
-      {
-        name: "Sizes",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Purpose",
-        placeholder: "Describe the intended purpose of the door"
-      }
+      attributes: [
+        {
+          name: "Style",
+          text: "سټایل",
+          placeholder: "د سټایل اړوند مالومات ولیکئ"
+        },
+        {
+          name: "Dimensions",
+          text: "حجم",
+          placeholder: "د حجم اړوند مالومات ولیکئ"
+        },
+        {
+          name: "Materials Used",
+          text: "موادو",
+          placeholder: "د جوړښت مواد یې څه دي؟"
+        },
+        {
+          name: "Sizes",
+          text: "اندازه",
+          placeholder: "اړوند سایز یې څومره دی"
+        },
+        {
+          name: "Purpose",
+          text: "هدف",
+          placeholder: "د څه لپاره پکاریږي"
+        }
       ]
     },
     {
-      name: "Home Textiles & Decoration",
+      name: "د کور دېکورشن سامان",
       id: 40,
-      attributes: [{
-        name: "Style",
-        placeholder: "Describe the style of the door"
-      },
-      {
-        name: "Dimensions",
-        placeholder: "Provide the dimensions of the door"
-      },
-      {
-        name: "Materials Used",
-        placeholder: "Describe the materials used in the door"
-      },
-      {
-        name: "Sizes",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Purpose",
-        placeholder: "Describe the intended purpose of the door"
-      }
+      attributes: [
+        {
+          name: "Style",
+          text: "سټایل",
+          placeholder: "د سټایل اړوند مالومات ولیکئ"
+        },
+        {
+          name: "Dimensions",
+          text: "حجم",
+          placeholder: "د حجم اړوند مالومات ولیکئ"
+        },
+        {
+          name: "Materials Used",
+          text: "موادو",
+          placeholder: "د جوړښت مواد یې څه دي؟"
+        },
+        {
+          name: "Sizes",
+          text: "اندازه",
+          placeholder: "اړوند سایز یې څومره دی"
+        },
+        {
+          name: "Purpose",
+          text: "هدف",
+          placeholder: "د څه لپاره پکاریږي"
+        }
       ]
     }
     ]
   },
   {
-    name: "ماشومانو ډولونه",
+    name: "د ماشوم فیشن",
     subcategories: [{
-      name: "Toys",
+      name: "نکتایي",
       id: 41,
-      attributes: [{
-        name: "Type",
-        placeholder: "Describe the type of toy"
-      }]
+      attributes: [
+        {
+          name: "Style",
+          text: "سټایل",
+          placeholder: "د سټایل اړوند مالومات ولیکئ"
+        },
+      ]
     },
     {
-      name: "Traditional Wear",
+      name: "کلتوري لباس",
       id: 42,
-      attributes: [{
-        name: "Style",
-        placeholder: "Describe the style of the traditional wear"
-      },
+      attributes: [
+        {
+          name: "Style",
+          text: "سټایل",
+          placeholder: "د سټایل اړوند مالومات ولیکئ"
+        },
       {
-        name: "Size",
-        placeholder: "Specify the available sizes"
+        name: "Sizes",
+        text: "اندازه",
+        placeholder: "اړوند سایز یې څومره دی"
       },
       {
         name: "Color",
-        placeholder: "Specify the available colors"
+        text: "رنګ",
+        placeholder: "موجوده رنګونه یې ولیکئ"
       },
       {
         name: "Age",
-        placeholder: "Specify the recommended age range"
+        text: "عمر",
+        placeholder: "د څو کلن ماشوم لپاره دي"
       }
       ]
     },
     {
-      name: "Winter Wear",
+      name: "د ژمي لباس",
       id: 43,
-      attributes: [{
-        name: "Style",
-        placeholder: "Describe the style of the winter wear"
-      },
+      attributes: [
+        {
+          name: "Style",
+          text: "سټایل",
+          placeholder: "د سټایل اړوند مالومات ولیکئ"
+        },
       {
-        name: "Size",
-        placeholder: "Specify the available sizes"
+        name: "Sizes",
+        text: "اندازه",
+        placeholder: "اړوند سایز یې څومره دی"
       },
       {
         name: "Color",
-        placeholder: "Specify the available colors"
+        text: "رنګ",
+        placeholder: "موجوده رنګونه یې ولیکئ"
       },
       {
         name: "Age",
-        placeholder: "Specify the recommended age range"
+        text: "عمر",
+        placeholder: "د څو کلن ماشوم لپاره دي"
       }
       ]
     },
     {
-      name: "Western Wear",
+      name: "بهرنۍ لباس",
       id: 44,
-      attributes: [{
-        name: "Style",
-        placeholder: "Describe the style of the western wear"
-      },
+      attributes: [
+        {
+          name: "Style",
+          text: "سټایل",
+          placeholder: "د سټایل اړوند مالومات ولیکئ"
+        },
       {
-        name: "Size",
-        placeholder: "Specify the available sizes"
+        name: "Sizes",
+        text: "اندازه",
+        placeholder: "اړوند سایز یې څومره دی"
       },
       {
         name: "Color",
-        placeholder: "Specify the available colors"
+        text: "رنګ",
+        placeholder: "موجوده رنګونه یې ولیکئ"
       },
       {
         name: "Age",
-        placeholder: "Specify the recommended age range"
+        text: "عمر",
+        placeholder: "د څو کلن ماشوم لپاره دي"
       }
       ]
     },
     {
-      name: "Bags & Accessories",
+      name: "بیک، او اړوند سامان",
       id: 45,
       attributes: [{
         name: "Type",
-        placeholder: "Describe the type of bag/accessory"
+        text: "ډول",
+        placeholder: "د جنس د ډول اړوند مالومات ولیکئ"
       }]
     },
     {
-      name: "Footwear",
+      name: "بوټ",
       id: 46,
-      attributes: [{
-        name: "Style",
-        placeholder: "Describe the style of the footwear"
-      },
+      attributes: [
+        {
+          name: "Style",
+          text: "سټایل",
+          placeholder: "د سټایل اړوند مالومات ولیکئ"
+        },
       {
-        name: "Size",
-        placeholder: "Specify the available sizes"
+        name: "Sizes",
+        text: "اندازه",
+        placeholder: "اړوند سایز یې څومره دی"
       },
       {
         name: "Color",
-        placeholder: "Specify the available colors"
+        text: "رنګ",
+        placeholder: "موجوده رنګونه یې ولیکئ"
       },
       {
         name: "Age",
-        placeholder: "Specify the recommended age range"
+        text: "عمر",
+        placeholder: "د څو کلن ماشوم لپاره دي"
       }
       ]
     },
     {
-      name: "Sleepwear",
+      name: "د خوب لباس",
       id: 47,
-      attributes: [{
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      },
-      {
-        name: "Age",
-        placeholder: "Specify the recommended age range"
-      }
+      attributes: [
+        {
+          name: "Sizes",
+          text: "اندازه",
+          placeholder: "اړوند سایز یې څومره دی"
+        },
+        {
+          name: "Color",
+          text: "رنګ",
+          placeholder: "موجوده رنګونه یې ولیکئ"
+        },
+        {
+          name: "Age",
+          text: "عمر",
+          placeholder: "د څو کلن ماشوم لپاره دي"
+        }
       ]
     }
     ]
   },
   {
-    name: "نارینه ډولونه",
+    name: "نارینه فیشن",
     
     subcategories: [{
-      name: "Jacket & Coat",
+      name: "کوټ او جاکټ",
       id: 48,
-      attributes: [{
-        name: "Style",
-        placeholder: "Describe the style of the jacket/coat"
-      },
+      attributes: [
+        {
+          name: "Style",
+          text: "سټایل",
+          placeholder: "د سټایل اړوند مالومات ولیکئ"
+        },
       {
-        name: "Size",
-        placeholder: "Specify the available sizes"
+        name: "Sizes",
+        text: "اندازه",
+        placeholder: "اړوند سایز یې څومره دی"
       },
       {
         name: "Color",
-        placeholder: "Specify the available colors"
-      }
+        text: "رنګ",
+        placeholder: "موجوده رنګونه یې ولیکئ"
+      },
       ]
     },
     {
-      name: "Shirts & T-Shirts",
+      name: "زيرپراني او یخن کاک",
       id: 49,
-      attributes: [{
+      attributes: [ {
         name: "Style",
-        placeholder: "Describe the style of the shirt/t-shirt"
+        text: "سټایل",
+        placeholder: "د سټایل اړوند مالومات ولیکئ"
       },
-      {
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      }
+    {
+      name: "Sizes",
+      text: "اندازه",
+      placeholder: "اړوند سایز یې څومره دی"
+    },
+    {
+      name: "Color",
+      text: "رنګ",
+      placeholder: "موجوده رنګونه یې ولیکئ"
+    },
       ]
     },
     {
-      name: "Pants",
+      name: "پتلون",
       id: 50,
-      attributes: [{
+      attributes: [ {
         name: "Style",
-        placeholder: "Describe the style of the pants"
+        text: "سټایل",
+        placeholder: "د سټایل اړوند مالومات ولیکئ"
       },
-      {
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      }
+    {
+      name: "Sizes",
+      text: "اندازه",
+      placeholder: "اړوند سایز یې څومره دی"
+    },
+    {
+      name: "Color",
+      text: "رنګ",
+      placeholder: "موجوده رنګونه یې ولیکئ"
+    },
       ]
     },
     {
-      name: "Traditional Clothing",
+      name: "کلتوري جامې",
       id: 51,
-      attributes: [{
+      attributes: [ {
         name: "Style",
-        placeholder: "Describe the style of the traditional clothing"
+        text: "سټایل",
+        placeholder: "د سټایل اړوند مالومات ولیکئ"
       },
-      {
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      }
+    {
+      name: "Sizes",
+      text: "اندازه",
+      placeholder: "اړوند سایز یې څومره دی"
+    },
+    {
+      name: "Color",
+      text: "رنګ",
+      placeholder: "موجوده رنګونه یې ولیکئ"
+    },
       ]
     },
     {
-      name: "Grooming & Bodycare",
+      name: "د نظافت اړوند توکي",
       id: 52,
-      attributes: [{
-        name: "Type",
-        placeholder: "Describe the type of grooming/bodycare product"
+      attributes: [ {
+        name: "type",
+        text: "ډول",
+        placeholder: "د جنس د ډول اړوند مالومات ولیکئ"
       },
-      {
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      }
+    {
+      name: "Sizes",
+      text: "اندازه",
+      placeholder: "اړوند سایز یې څومره دی"
+    },
+    {
+      name: "Color",
+      text: "رنګ",
+      placeholder: "موجوده رنګونه یې ولیکئ"
+    },
       ]
     },
     {
-      name: "Optical & Sunglasses",
+      name: "لمریزي او طبي عینکې",
       id: 53,
-      attributes: [{
+      attributes: [ {
         name: "Style",
-        placeholder: "Describe the style of the optical/sunglasses"
+        text: "سټایل",
+        placeholder: "د سټایل اړوند مالومات ولیکئ"
       },
-      {
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      }
+    {
+      name: "Sizes",
+      text: "اندازه",
+      placeholder: "اړوند سایز یې څومره دی"
+    },
+    {
+      name: "Color",
+      text: "رنګ",
+      placeholder: "موجوده رنګونه یې ولیکئ"
+    },
       ]
     },
     {
-      name: "Baby Boy's Fashion",
+      name: "د نوو پیدا شوو ماشومانو توکي",
       id: 54,
-      attributes: [{
+      attributes: [ {
         name: "Style",
-        placeholder: "Describe the style of the baby boy's fashion item"
+        text: "سټایل",
+        placeholder: "د سټایل اړوند مالومات ولیکئ"
       },
-      {
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      }
+    {
+      name: "Sizes",
+      text: "اندازه",
+      placeholder: "اړوند سایز یې څومره دی"
+    },
+    {
+      name: "Color",
+      text: "رنګ",
+      placeholder: "موجوده رنګونه یې ولیکئ"
+    },
       ]
     },
     {
-      name: "Bags & Accessories",
+      name: "بیګ او اړوند سامان",
       id: 55,
       attributes: [{
-        name: "Type",
-        placeholder: "Describe the type of bag/accessory"
+        name: "type",
+        text: "ډول",
+        placeholder: "د جنس د ډول اړوند مالومات ولیکئ"
       },
-      {
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      }
+    {
+      name: "Sizes",
+      text: "اندازه",
+      placeholder: "اړوند سایز یې څومره دی"
+    },
+    {
+      name: "Color",
+      text: "رنګ",
+      placeholder: "موجوده رنګونه یې ولیکئ"
+    },
       ]
     },
     {
-      name: "Footwear",
+      name: "بوټ",
       id: 56,
       attributes: [{
         name: "Style",
-        placeholder: "Describe the style of the footwear"
+        text: "سټایل",
+        placeholder: "د سټایل اړوند مالومات ولیکئ"
       },
-      {
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      }
+    {
+      name: "Sizes",
+      text: "اندازه",
+      placeholder: "اړوند سایز یې څومره دی"
+    },
+    {
+      name: "Color",
+      text: "رنګ",
+      placeholder: "موجوده رنګونه یې ولیکئ"
+    },
       ]
     },
     {
-      name: "Watches",
+      name: "ساعت",
       id: 57,
       attributes: [{
         name: "Style",
-        placeholder: "Describe the style of the watch"
+        text: "سټایل",
+        placeholder: "د سټایل اړوند مالومات ولیکئ"
       },
-      {
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      }
+    {
+      name: "Sizes",
+      text: "اندازه",
+      placeholder: "اړوند سایز یې څومره دی"
+    },
+    {
+      name: "Color",
+      text: "رنګ",
+      placeholder: "موجوده رنګونه یې ولیکئ"
+    },
       ]
     },
 
     ],
   },
   {
-    name: "ښځینه ډولونه",
+    name: "ښځینه فیشن",
     subcategories: [{
-      name: "Traditional Wear",
+      name: "کلتوري جامې",
       id: 58,
       attributes: [{
         name: "Style",
-        placeholder: "Describe the style of the traditional wear"
+        text: "سټایل",
+        placeholder: "د سټایل اړوند مالومات ولیکئ"
       },
-      {
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      }
+    {
+      name: "Sizes",
+      text: "اندازه",
+      placeholder: "اړوند سایز یې څومره دی"
+    },
+    {
+      name: "Color",
+      text: "رنګ",
+      placeholder: "موجوده رنګونه یې ولیکئ"
+    },
       ]
     },
     {
-      name: "Winter Wear",
+      name: "د ژمي جامې",
       id: 59,
       attributes: [{
         name: "Style",
-        placeholder: "Describe the style of the winter wear"
+        text: "سټایل",
+        placeholder: "د سټایل اړوند مالومات ولیکئ"
       },
-      {
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      }
+    {
+      name: "Sizes",
+      text: "اندازه",
+      placeholder: "اړوند سایز یې څومره دی"
+    },
+    {
+      name: "Color",
+      text: "رنګ",
+      placeholder: "موجوده رنګونه یې ولیکئ"
+    },
       ]
     },
     {
-      name: "Western Wear",
+      name: "بهرنۍ جامې",
       id: 60,
       attributes: [{
         name: "Style",
-        placeholder: "Describe the style of the western wear"
+        text: "سټایل",
+        placeholder: "د سټایل اړوند مالومات ولیکئ"
       },
-      {
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      }
+    {
+      name: "Sizes",
+      text: "اندازه",
+      placeholder: "اړوند سایز یې څومره دی"
+    },
+    {
+      name: "Color",
+      text: "رنګ",
+      placeholder: "موجوده رنګونه یې ولیکئ"
+    },
       ]
     },
     {
-      name: "Bags & Accessories",
+      name: "بیګ او اړوند سامان",
       id: 61,
       attributes: [{
         name: "Type",
-        placeholder: "Describe the type of bag/accessory"
+        text: "ډول",
+        placeholder: "د جنس د ډول اړوند مالومات ولیکئ"
       },
-      {
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      }
+    {
+      name: "Sizes",
+      text: "اندازه",
+      placeholder: "اړوند سایز یې څومره دی"
+    },
+    {
+      name: "Color",
+      text: "رنګ",
+      placeholder: "موجوده رنګونه یې ولیکئ"
+    },
       ]
     },
     {
-      name: "Footwear",
+      name: "بوټ",
       id: 62,
-      attributes: [{
-        name: "Style",
-        placeholder: "Describe the style of the footwear"
-      },
+      attributes: [
+        {
+          name: "Style",
+          text: "سټایل",
+          placeholder: "د سټایل اړوند مالومات ولیکئ"
+        },
       {
-        name: "Size",
-        placeholder: "Specify the available sizes"
+        name: "Sizes",
+        text: "اندازه",
+        placeholder: "اړوند سایز یې څومره دی"
       },
       {
         name: "Color",
-        placeholder: "Specify the available colors"
-      }
+        text: "رنګ",
+        placeholder: "موجوده رنګونه یې ولیکئ"
+      },
       ]
     },
     {
-      name: "Lingerie & Sleepwear",
+      name: "د خوب لباس",
       id: 63,
       attributes: [{
         name: "Type",
-        placeholder: "Describe the type of lingerie/sleepwear"
+        text: "ډول",
+        placeholder: "د جنس د ډول اړوند مالومات ولیکئ"
       },
-      {
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      }
+    {
+      name: "Sizes",
+      text: "اندازه",
+      placeholder: "اړوند سایز یې څومره دی"
+    },
+    {
+      name: "Color",
+      text: "رنګ",
+      placeholder: "موجوده رنګونه یې ولیکئ"
+    },
       ]
     },
     {
-      name: "Jewelry & Watches",
+      name: "زيورات او ساعت",
       id: 64,
       attributes: [{
         name: "Type",
-        placeholder: "Describe the type of jewelry/watch"
+        text: "ډول",
+        placeholder: "د جنس د ډول اړوند مالومات ولیکئ"
       },
-      {
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      }
+    {
+      name: "Sizes",
+      text: "اندازه",
+      placeholder: "اړوند سایز یې څومره دی"
+    },
+    {
+      name: "Color",
+      text: "رنګ",
+      placeholder: "موجوده رنګونه یې ولیکئ"
+    },
       ]
     },
     {
-      name: "Beauty & Personal Care",
+      name: "د ښایست اړوند توکي",
       id: 65,
       attributes: [{
         name: "Type",
-        placeholder: "Describe the type of beauty/personal care product"
+        text: "ډول",
+        placeholder: "د جنس د ډول اړوند مالومات ولیکئ"
       },
-      {
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      }
+    {
+      name: "Sizes",
+      text: "اندازه",
+      placeholder: "اړوند سایز یې څومره دی"
+    },
+    {
+      name: "Color",
+      text: "رنګ",
+      placeholder: "موجوده رنګونه یې ولیکئ"
+    },
       ]
     },
     {
-      name: "Optical & Sunglasses",
+      name: "لمریزې او طبي عینکې",
       id: 66,
-      attributes: [{
+      attributes: [ {
         name: "Style",
-        placeholder: "Describe the style of the optical/sunglasses"
+        text: "سټایل",
+        placeholder: "د سټایل اړوند مالومات ولیکئ"
       },
-      {
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      }
+    {
+      name: "Sizes",
+      text: "اندازه",
+      placeholder: "اړوند سایز یې څومره دی"
+    },
+    {
+      name: "Color",
+      text: "رنګ",
+      placeholder: "موجوده رنګونه یې ولیکئ"
+    },
       ]
     }
     ]
@@ -3945,65 +4291,76 @@ const pashtoCategories = [
   {
     name: "سپورتي توکي",
     subcategories: [{
-      name: "Sports Wear",
+      name: "د سپورت لباس",
       id: 67,
-      attributes: [{
-        name: "Size",
-        placeholder: "Specify the available sizes"
-      },
-      {
-        name: "Color",
-        placeholder: "Specify the available colors"
-      }
+      attributes: [ 
+    {
+      name: "Sizes",
+      text: "اندازه",
+      placeholder: "اړوند سایز یې څومره دی"
+    },
+    {
+      name: "Color",
+      text: "رنګ",
+      placeholder: "موجوده رنګونه یې ولیکئ"
+    },
       ]
     },
     {
-      name: "Fitness & Gym",
+      name: "د بدن جوړونې توکي",
       id: 68,
       attributes: [{
         name: "Usage",
-        placeholder: "Enter usage details"
+        text: "استعمال",
+        placeholder: "د استعمال اړوند مالومات ولیکئ"
       },
       {
         name: "Benifits",
-        placeholder: "Write some key benifits"
+        text: "ګټې",
+        placeholder: "مهمې ګټې يې ولیکئ"
       }
       ]
     }]
   },
   {
-    name: "قرطاسیه",
+    name: "ښوونه او روزنه",
     subcategories: [{
-      name: "Textbooks",
+      name: "درسي کتابونه",
       id: 69,
       attributes: [{
         name: "Subject",
-        placeholder: "Specify the subject of the textbook"
+        text: "مضمون",
+        placeholder: "د مضمون نوم ولیکئ"
       },
       {
         name: "Author",
-        placeholder: "Specify the author(s) of the textbook"
+        text: "لیکوال",
+        placeholder: "د لیکوال نوم ولیکئ"
       },
       {
         name: "Pages",
-        placeholder: "Specify the number of pages in the textbook"
+        text: "حجم",
+        placeholder: "څو مخونه یا پاڼې لري"
       }
       ]
     },
     {
-      name: "Books",
+      name: "کتابونه",
       id: 70,
       attributes: [{
         name: "Title",
-        placeholder: "Specify the title of the book"
+        text: "نوم",
+        placeholder: "د کتاب نوم ولیکئ"
       },
       {
         name: "Author",
-        placeholder: "Specify the author(s) of the book"
+        text: "لیکوال",
+        placeholder: "د لیکوال نوم ولیکئ"
       },
       {
         name: "Pages",
-        placeholder: "Specify the number of pages in the book"
+        text: "حجم",
+        placeholder: "څو مخونه یا پاڼې لري"
       }
       ]
     }
@@ -4012,32 +4369,32 @@ const pashtoCategories = [
   {
     name: "لومړنۍ توکي",
     subcategories: [{
-      name: "Grocery",
+      name: "خوراکي توکي",
       id: 71,
       attributes: []
     },
     {
-      name: "Fruits & Vegetables",
+      name: "مېوه او سبزي",
       id: 72,
       attributes: []
     },
     {
-      name: "Meat & Seafood",
+      name: "غوښه او بهري خوراکونه",
       id: 73,
       attributes: []
     },
     {
-      name: "Baby Products",
+      name: "د ماشومانو خوراکي توکي",
       id: 74,
       attributes: []
     },
     {
-      name: "Healthcare",
+      name: "روغتیایي توکي",
       id: 75,
       attributes: []
     },
     {
-      name: "Household",
+      name: "کورني توکي",
       id: 76,
       attributes: []
     }
@@ -4047,148 +4404,172 @@ const pashtoCategories = [
     name: "خدمتونه",
     
     subcategories: [{
-      name: "Building Maintenance",
+      name: "د اپارتمان ساتنه",
       id: 77,
       attributes: [
         {
           name: "Type of Services",
-          placeholder: "Describe the type of services offered"
+          text: "د خدماتو ډول",
+          placeholder: "د خدماتو ډول ولیکئ"
         },
         {
           name: "Working hours",
-          placeholder: "Specify the working hours"
+          text: "کاري وخت",
+          placeholder: "د کاري ساعتونو اړوند مالومات ولیکئ"
         }
       ]
     },
     {
-      name: "Domestic & Daycare Services",
+      name: "ورځني خدمتونه",
       id: 78,
       attributes: [
         {
           name: "Type of Services",
-          placeholder: "Describe the type of services offered"
+          text: "د خدماتو ډول",
+          placeholder: "د خدماتو ډول ولیکئ"
         },
         {
           name: "Working hours",
-          placeholder: "Specify the working hours"
+          text: "کاري وخت",
+          placeholder: "د کاري ساعتونو اړوند مالومات ولیکئ"
         }
       ]
     },
     {
-      name: "Fitness & Beauty Services",
+      name: "د بدن جوړونې او ښایست خدمتونه",
       id: 79,
       attributes: [
         {
           name: "Type of Services",
-          placeholder: "Describe the type of services offered"
+          text: "د خدماتو ډول",
+          placeholder: "د خدماتو ډول ولیکئ"
         },
         {
           name: "Working hours",
-          placeholder: "Specify the working hours"
+          text: "کاري وخت",
+          placeholder: "د کاري ساعتونو اړوند مالومات ولیکئ"
         }
       ]
     },
     {
-      name: "IT Services",
+      name: "ای ټي خدمتونه",
       id: 80,
       attributes: [
         {
           name: "Type of Services",
-          placeholder: "Describe the type of services offered"
+          text: "د خدماتو ډول",
+          placeholder: "د خدماتو ډول ولیکئ"
         },
         {
           name: "Working hours",
-          placeholder: "Specify the working hours"
+          text: "کاري وخت",
+          placeholder: "د کاري ساعتونو اړوند مالومات ولیکئ"
         }
       ]
     },
     {
-      name: "Funeral equipment",
+      name: "د مړي د تکفین خدمتونه",
       id: 81,
       attributes: [
         {
           name: "Type of Services",
-          placeholder: "Describe the type of services offered"
+          text: "د خدماتو ډول",
+          placeholder: "د خدماتو ډول ولیکئ"
         },
         {
           name: "Working hours",
-          placeholder: "Specify the working hours"
+          text: "کاري وخت",
+          placeholder: "د کاري ساعتونو اړوند مالومات ولیکئ"
         }
       ]
     },
     {
-      name: "Professional Services",
+      name: "حرفه اي خدمتونه",
       id: 82,
       attributes: [
         {
           name: "Type of Services",
-          placeholder: "Describe the type of services offered"
+          text: "د خدماتو ډول",
+          placeholder: "د خدماتو ډول ولیکئ"
         },
         {
           name: "Working hours",
-          placeholder: "Specify the working hours"
+          text: "کاري وخت",
+          placeholder: "د کاري ساعتونو اړوند مالومات ولیکئ"
         }
       ]
     },
     {
-      name: "Servicing & Repair",
+      name: "د ترمیم خدمات",
       id: 83,
       attributes: [
         {
           name: "Type of Services",
-          placeholder: "Describe the type of services offered"
+          text: "د خدماتو ډول",
+          placeholder: "د خدماتو ډول ولیکئ"
         },
         {
           name: "Working hours",
-          placeholder: "Specify the working hours"
+          text: "کاري وخت",
+          placeholder: "د کاري ساعتونو اړوند مالومات ولیکئ"
         }
       ]
     },
     {
-      name: "Tours & Travels",
+      name: "سفري خدمات",
       id: 84,
-      attributes: [{
-        name: "Type of Services",
-        placeholder: "Describe the type of services offered"
-      },
-      {
-        name: "Working hours",
-        placeholder: "Specify the working hours"
-      }
+      attributes: [
+        {
+          name: "Type of Services",
+          text: "د خدماتو ډول",
+          placeholder: "د خدماتو ډول ولیکئ"
+        },
+        {
+          name: "Working hours",
+          text: "کاري وخت",
+          placeholder: "د کاري ساعتونو اړوند مالومات ولیکئ"
+        }
       ]
     },
     {
-      name: "Mobile Phone Services",
+      name: "مبایل خدمات",
       id: 85,
-      attributes: [{
-        name: "Type of Services",
-        placeholder: "Describe the type of services offered"
-      },
-      {
-        name: "Working hours",
-        placeholder: "Specify the working hours"
-      },
+      attributes: [
+        {
+          name: "Type of Services",
+          text: "د خدماتو ډول",
+          placeholder: "د خدماتو ډول ولیکئ"
+        },
+        {
+          name: "Working hours",
+          text: "کاري وخت",
+          placeholder: "د کاري ساعتونو اړوند مالومات ولیکئ"
+        },
       {
         name: "Type of Phones",
-        placeholder: "Specify the type of phones serviced"
+        text: "د اړیکو نیولو ډول",
+        placeholder: "د اړیکو نیولو اړوند مالومات ولیکئ"
       }
       ]
     },
     {
-      name: "Auto Services",
+      name: "اتومات خدمتونه",
       id: 86,
       attributes: [{
         name: "Car Type",
-        placeholder: "Specify the type of car"
+        text: "د موټر ډول",
+        placeholder: "د موټر ډول ولیکئ"
       },
       {
-        name: "Service Type",
-        placeholder: "Specify the type of service offered"
+        name: "Type of Services",
+        text: "د خدماتو ډول",
+        placeholder: "د خدماتو ډول ولیکئ"
       },
       {
         name: "Working hours",
-        placeholder: "Specify the working hours"
-      }
+        text: "کاري وخت",
+        placeholder: "د کاري ساعتونو اړوند مالومات ولیکئ"
+      },
       ]
     }
     ]
@@ -4196,71 +4577,84 @@ const pashtoCategories = [
   {
     name: "کرهڼه",
     subcategories: [{
-      name: "Crops, Seeds & Plants",
+      name: "تخمونه او دانې",
       id: 87,
       attributes: [
         {
           name: "Type",
-          placeholder: "Specify the type of crop, seed, or plant"
+          text: "ډول",
+          placeholder: "د تخم یا دانو ډول ولیکئ"
         },
         {
           name: "Quantity",
-          placeholder: "Specify the quantity available"
+          text: "اندازه",
+          placeholder: "څو کیلو ګرامه دي"
         },
         {
           name: "Origin",
-          placeholder: "Specify the place of origin"
+          text: "ّځای",
+          placeholder: "د کوم ولایت اړوند دي"
         },
         {
           name: "Growth Stage",
-          placeholder: "Indicate the growth stage"
+          text: "وخت",
+          placeholder: "څه وخت راټول شوي دي"
         },
         {
           name: "Organic",
-          placeholder: "Specify if the crops, seeds, or plants are organic"
+          text: "اورګانیک",
+          placeholder: "آیا دا تخم یا دانه اورګانیک دی؟"
         }
       ]
     },
     {
-      name: "Farming Tools & Machinery",
+      name: "د کرهڼې اړوند ماشینونه",
       id: 88,
       attributes: [{
         name: "Year",
-        placeholder: "Specify the year of manufacture"
+        text: "کال",
+        placeholder: "کوم کال کې جوړ شوی دی"
       },
       {
         name: "Type",
-        placeholder: "Specify the type of farming tool or machinery"
+        text: "ډول",
+        placeholder: "د ماشینري ډول ولیکئ"
       },
       {
         name: "Fuel Type",
-        placeholder: "Specify the fuel type used"
+        text: "د تیلو ډول",
+        placeholder: "ډیزل دی یا پطرول"
       },
       {
         name: "Drive Type",
-        placeholder: "Specify the drive type"
+        text: "لاس",
+        placeholder: "راسته لاس دی که چپه"
       },
       {
         name: "History",
-        placeholder: "Describe the maintenance and repair history"
+        text: "تاریخچه",
+        placeholder: "د تاریخچې اړوند مالومات ولیکئ"
       },
       {
         name: "Ownership Documentation",
-        placeholder: "Specify the ownership documentation"
+        text: "اسناد",
+        placeholder: "د اسنادو اړوند مالومات یې ولیکئ"
       },
       {
         name: "Usage",
-        placeholder: "Describe the usage details"
+        text: "استعمال",
+        placeholder: "د استعمال مالومات یې ولیکئ"
       }
       ]
     },
     {
-      name: "Other Agriculture",
+      name: "نور کرهڼیز توکي",
       id: 89,
       attributes: [
         {
           name: "Specific Attributes",
-          placeholder: "Specify the key attributes"
+          text: "ځانګړتیاوې",
+          placeholder: "یو څو خاصې ځانګړنې یې ولیکئ"
         }
       ]
     }
@@ -4269,58 +4663,67 @@ const pashtoCategories = [
   {
     name: "غله جات",
     subcategories: [{
-      name: "Rice",
+      name: "وریژې",
       id: 90,
       attributes: [
         {
           name: "Place",
-          placeholder: "Specify the place of origin"
+          text: "ّځای",
+          placeholder: "د کوم ځای اړوند دي"
         },
         {
           name: "Weight",
-          placeholder: "Specify the weight or quantity"
+          text: "وزن",
+          placeholder: "وزن یې څومره دی"
         }
       ]
     },
     {
-      name: "Corn",
+      name: "جوار",
       id: 91,
       attributes: [
         {
           name: "Place",
-          placeholder: "Specify the place of origin"
+          text: "ّځای",
+          placeholder: "د کوم ځای اړوند دي"
         },
         {
           name: "Weight",
-          placeholder: "Specify the weight or quantity"
+          text: "وزن",
+          placeholder: "وزن یې څومره دی"
         }
       ]
     },
     {
-      name: "Wheat",
+      name: "غنم",
       id: 92,
       attributes: [
         {
           name: "Place",
-          placeholder: "Specify the place of origin"
+          text: "ّځای",
+          placeholder: "د کوم ځای اړوند دي"
         },
         {
           name: "Weight",
-          placeholder: "Specify the weight or quantity"
+          text: "وزن",
+          placeholder: "وزن یې څومره دی"
         }
       ]
     },
     {
-      name: "Barley",
+      name: "اوربشې",
       id: 93,
-      attributes: [{
-        name: "Place",
-        placeholder: "Specify the place of origin"
-      },
-      {
-        name: "Weight",
-        placeholder: "Specify the weight or quantity"
-      }
+      attributes: [
+        {
+          name: "Place",
+          text: "ّځای",
+          placeholder: "د کوم ځای اړوند دي"
+        },
+        {
+          name: "Weight",
+          text: "وزن",
+          placeholder: "وزن یې څومره دی"
+        }
       ]
     }
     ]
