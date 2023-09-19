@@ -6920,6 +6920,7 @@ const populateSubCategoryOptions = () => {
   const divElements = document.querySelectorAll('.removeableInputs');
 
   subCategorySelect.innerHTML = ""; // Clear previous options
+  
   if (selectedCategory) {
     if (selectedCategory.name == 'Grains' || selectedCategory.name == 'Agriculture' || selectedCategory.name == 'Services' || selectedCategory.name == 'Property' || selectedCategory.name == 'Essentials' || selectedCategory.name == 'Education') {
     console.log(selectedCategory.name,"dsfjalksfjkla")
